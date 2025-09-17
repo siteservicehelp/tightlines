@@ -48,3 +48,19 @@
 		border: 1px solid $white;
 	}
 }
+.btn-black {
+	background: $black;
+	border: none;
+	&:hover {
+		background: $black;
+		color: $white;
+	}
+	&:focus {
+		background: $black;
+		color: $white;
+	}
+	&:active {
+		background: $blue-2;
+		color: $white;
+	}
+} 

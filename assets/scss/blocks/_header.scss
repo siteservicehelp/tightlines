@@ -9,9 +9,6 @@
 	    justify-content: space-between;
 	    padding: 58px 0;
 	    margin-top: 20px;
-		.logo-block {
-
-		}
 		.menu-block {
 			display: flex;
 			align-items: center;
@@ -22,6 +19,31 @@
 			    text-transform: uppercase;
 			    img {
 			    	margin-left: 20px;
+			    	vertical-align: baseline;
+			    }
+			}
+		}
+	}
+}
+
+.header-wrapper-2 {
+	.header-block {
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    padding: 58px 0;
+	    margin-top: 20px;
+		.menu-block {
+			display: flex;
+			align-items: center;
+			.text-bold {
+				border: none;
+			    background: inherit;
+			    color: $black;	
+			    text-transform: uppercase;
+			    img {
+			    	margin-left: 20px;
+			    	vertical-align: baseline;
 			    }
 			}
 		}

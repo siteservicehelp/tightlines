@@ -1,12 +1,9 @@
 body {
 	font-family: "Roboto Flex", sans-serif;
 	font-size: 20px;
-	line-height: 20px;
 	font-style: normal;
 	font-weight: 300;
-	font-style: Light;
 	line-height: 135%;
-	letter-spacing: 0%;
 	color: $black;
 }
 
@@ -58,6 +55,10 @@ h6, .h6 {
 
 .text-large {
 	font-size: 30px;
+}
+
+.text-semibold {
+	font-weight: 600;
 }
 
 .text-bold {

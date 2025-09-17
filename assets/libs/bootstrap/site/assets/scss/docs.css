@@ -1,7 +1,7 @@
 /*
 Error: $color: "var(--bs-primary-rgb)" is not a color for `rgba'
-        on line 47 of /home/user/www/TIGHTLINES/assets/libs/bootstrap/scss/_functions.scss
-        from line 28 of /home/user/www/TIGHTLINES/assets/libs/bootstrap/site/assets/scss/docs.scss
+        on line 47 of /home/user/www/tightlines/assets/libs/bootstrap/scss/_functions.scss
+        from line 28 of /home/user/www/tightlines/assets/libs/bootstrap/site/assets/scss/docs.scss
 
 42: @import "ads";
 43: @import "content";
@@ -16,8 +16,8 @@ Error: $color: "var(--bs-primary-rgb)" is not a color for `rgba'
 52: @import "brand";
 
 Backtrace:
-/home/user/www/TIGHTLINES/assets/libs/bootstrap/scss/_functions.scss:47
-/home/user/www/TIGHTLINES/assets/libs/bootstrap/site/assets/scss/docs.scss:28
+/home/user/www/tightlines/assets/libs/bootstrap/scss/_functions.scss:47
+/home/user/www/tightlines/assets/libs/bootstrap/site/assets/scss/docs.scss:28
 /usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:315:in `reformat_argument_error'
 /usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:162:in `rescue in _perform'
 /usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/funcall.rb:131:in `_perform'
@@ -160,4 +160,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: $color: \"var(--bs-primary-rgb)\" is not a color for `rgba'\A         on line 47 of /home/user/www/TIGHTLINES/assets/libs/bootstrap/scss/_functions.scss\A         from line 28 of /home/user/www/TIGHTLINES/assets/libs/bootstrap/site/assets/scss/docs.scss\A \A 42: @import \"ads\";\A 43: @import \"content\";\A 44: @import \"skippy\";\A 45: @import \"sidebar\";\A 46: @import \"layout\";\A 47: @import \"toc\";\A 48: @import \"footer\";\A 49: @import \"component-examples\";\A 50: @import \"buttons\";\A 51: @import \"callouts\";\A 52: @import \"brand\";"; }
+  content: "Error: $color: \"var(--bs-primary-rgb)\" is not a color for `rgba'\A         on line 47 of /home/user/www/tightlines/assets/libs/bootstrap/scss/_functions.scss\A         from line 28 of /home/user/www/tightlines/assets/libs/bootstrap/site/assets/scss/docs.scss\A \A 42: @import \"ads\";\A 43: @import \"content\";\A 44: @import \"skippy\";\A 45: @import \"sidebar\";\A 46: @import \"layout\";\A 47: @import \"toc\";\A 48: @import \"footer\";\A 49: @import \"component-examples\";\A 50: @import \"buttons\";\A 51: @import \"callouts\";\A 52: @import \"brand\";"; }
