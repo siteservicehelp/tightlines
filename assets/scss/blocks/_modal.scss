@@ -1,0 +1,59 @@
+.modal {
+	.modal-content {
+		border-radius: 0; 
+		padding: 30px 20px 5px;		
+		.modal-header {
+			border-radius: 0; 
+			border: none;
+			button {
+				margin-top: -12px;
+				i {
+					margin: 0;
+				}
+			}
+		}
+		.modal-footer {
+			border-radius: 0; 
+			border: none;
+		}
+		.modal-title {
+			font-weight: bold; 
+			font-size: 26px; 
+			line-height: 32px;
+			font-family: 'Gilroy';
+			color: #341A0C;
+		}
+		.form-check {
+			line-height: normal; 
+			padding-left: 0; 
+			margin-bottom: 30px;
+		}
+		.checkbox-text {
+			font-size: 12px;
+			line-height: 1;
+			display: block;
+		}
+		.form-group {
+			width: 100%;
+		}
+	}
+}
+
+#cookie-modal {
+	@media screen and (min-width: 1200px) {
+		.modal-dialog {
+		    max-width: 1100px;		    
+		}
+	}
+	.modal-header {
+	    border: none;
+	    padding: 30px;
+	}
+}
+
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:after {content: "\f00c"; font-family: "Font Awesome 5 Free"; font-weight: 900; display: block; 
+position: absolute; top: .35rem;left: -1.4rem;width: 0.8rem;height: 0.8rem;font-size: 0.8rem; background: none; border-color: #adb5bd;}
+.custom-control-input:checked ~ .custom-control-label:before {background: none; border-color: #adb5bd;}
+.custom-control-input:focus:not(:checked) ~ .custom-control-label:before {border-color: #adb5bd;}
+.custom-control-input:focus ~ .custom-control-label:before { box-shadow: none;}

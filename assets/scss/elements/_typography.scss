@@ -1,0 +1,70 @@
+body {
+	font-family: "Roboto Flex", sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 300;
+	font-style: Light;
+	line-height: 135%;
+	letter-spacing: 0%;
+	color: $black;
+}
+
+p {
+	font-size: 20px;
+	line-height: 20px;
+	font-style: normal;
+	font-weight: 300;
+}
+
+h1, .h1 {
+	font-size: 100px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+h2, .h2 {
+	font-size: 60px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+h3, .h3 {
+	
+}
+
+h4, .h4 {
+	
+}
+h5, .h5 {
+	
+}
+
+h6, .h6 {
+	
+}
+
+.text-tiny {
+	
+}
+
+.text-small {
+	font-size: 16px;
+}
+
+.text-medium {
+	font-size: 24px;
+}
+
+.text-large {
+	font-size: 30px;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	transition: all .25s ease-in-out;
+}
