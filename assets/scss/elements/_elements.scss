@@ -1,22 +1,17 @@
 /***********************
+        COLOR_MAP 
+***********************/
+@import "_color_map";
+
+/***********************
         FONTS 
 ***********************/
 @import "_fonts";
 
 /***********************
-      STYLEGUIDE 
+        TYPOGRAPHY 
 ***********************/
-@import "_styleguide";
-
-/***********************
-        WP_STYLES 
-***********************/
-@import "_wp_styles";
-
-/***********************
-        COLOR_MAP 
-***********************/
-@import "_color_map";
+@import "_typography";
 
 /***********************
         BUTTONS 
@@ -29,6 +24,11 @@
 @import "_forms";
 
 /***********************
-        TYPOGRAPHY 
+      STYLEGUIDE 
 ***********************/
-@import "_typography";
+@import "_styleguide";
+
+/***********************
+        WP_STYLES 
+***********************/
+@import "_wp_styles";

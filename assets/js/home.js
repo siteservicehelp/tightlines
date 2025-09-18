@@ -4,34 +4,26 @@
     $(window).on('load', function () {
         preloader = $('.loaderArea'),
         loader = preloader.find('.loader');
-        loader.fadeOut();
-        preloader.delay(350).fadeOut('slow');
+        loader.delay(500).fadeOut();
+        preloader.delay(500).fadeOut('slow');
     });
 
-    // Кнопка Вверх
-    /*$(window).scroll(function(){
-        if ($(this).scrollTop() > 300) {
-            $('.scrollup').fadeIn();
-        } else {
-            $('.scrollup').fadeOut();
-        }
-    });
-    $('.scrollup').click(function(){
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false;
+
+    $(window).on('load', function () {
+        singleMovie = $('.single-movie:nth-child(2)');
+        singleMovie.addClass('active');
     });
 
-    // ScrollTo - Скролл до якоря #     
-    $('a.target-btn[href^="#"]').bind('click.smoothscroll',function (e) {
-        e.preventDefault();
-        var target = this.hash,
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top - ($('header').height())
-        }, 600);
-    });*/ 
+
+    $('.single-movie').mouseover( function() {     
+        $('.single-movie').removeClass('active'); 
+        $(this).addClass('active') 
+    });
 
 }) })(jQuery)
+
+
+
 
 window.addEventListener('load', () => {
    /**
@@ -71,26 +63,4 @@ window.addEventListener('load', () => {
             }       
         })
     }
-
-
-
-    /*const menuItems = document.querySelectorAll('.menu-item-has-children')
-    menuItems.forEach(item => {
-        const itemLink = item.querySelector('a')
-        const itemMenu = item.querySelector('.sub-menu')
-        itemLink.addEventListener('click', function (e) {
-            e.preventDefault();
-            this.classList.toggle('button-active');
-            itemMenu.classList.toggle('active');
-        });
-
-        document.addEventListener("click", (e) => {
-            let target = e.target;
-          
-            if (!item.contains(target) && itemMenu.classList.contains('active')) {
-                itemLink.classList.remove('button-active');
-                itemMenu.classList.remove('active');
-            }
-        })
-    });*/
 });

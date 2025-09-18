@@ -1,0 +1,50 @@
+<svg width="1800" height="1245" viewBox="0 0 1800 1245" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_3_63)">
+<g clip-path="url(#clip1_3_63)">
+<mask id="path-3-inside-1_3_63" fill="white">
+<path d="M0 -332H444.25V309H0V-332Z"/>
+</mask>
+<path d="M444.25 -332H443.25V309H444.25H445.25V-332H444.25ZM0 309H1V-332H0H-1V309H0Z" fill="white" fill-opacity="0.5" mask="url(#path-3-inside-1_3_63)"/>
+<mask id="path-5-inside-2_3_63" fill="white">
+<path d="M444.25 -332H888.5V309H444.25V-332Z"/>
+</mask>
+<path d="M888.5 -332H887.5V309H888.5H889.5V-332H888.5Z" fill="white" fill-opacity="0.5" mask="url(#path-5-inside-2_3_63)"/>
+<mask id="path-7-inside-3_3_63" fill="white">
+<path d="M888.5 -332H1332.75V309H888.5V-332Z"/>
+</mask>
+<path d="M1332.75 -332H1331.75V309H1332.75H1333.75V-332H1332.75Z" fill="white" fill-opacity="0.5" mask="url(#path-7-inside-3_3_63)"/>
+<mask id="path-9-inside-4_3_63" fill="white">
+<path d="M1332.75 -332H1777V309H1332.75V-332Z"/>
+</mask>
+<path d="M1777 -332H1776V309H1777H1778V-332H1777Z" fill="white" fill-opacity="0.5" mask="url(#path-9-inside-4_3_63)"/>
+<mask id="path-11-inside-5_3_63" fill="white">
+<path d="M0 950H360V1226H0V950Z"/>
+</mask>
+<path d="M360 950H359V1226H360H361V950H360ZM0 1226H1V950H0H-1V1226H0Z" fill="white" fill-opacity="0.5" mask="url(#path-11-inside-5_3_63)"/>
+<mask id="path-13-inside-6_3_63" fill="white">
+<path d="M360 950H720V1226H360V950Z"/>
+</mask>
+<path d="M720 950H719V1226H720H721V950H720Z" fill="white" fill-opacity="0.5" mask="url(#path-13-inside-6_3_63)"/>
+<mask id="path-15-inside-7_3_63" fill="white">
+<path d="M720 950H1080V1226H720V950Z"/>
+</mask>
+<path d="M1080 950H1079V1226H1080H1081V950H1080Z" fill="white" fill-opacity="0.5" mask="url(#path-15-inside-7_3_63)"/>
+<mask id="path-17-inside-8_3_63" fill="white">
+<path d="M1080 950H1440V1226H1080V950Z"/>
+</mask>
+<path d="M1440 950H1439V1226H1440H1441V950H1440Z" fill="white" fill-opacity="0.5" mask="url(#path-17-inside-8_3_63)"/>
+<mask id="path-19-inside-9_3_63" fill="white">
+<path d="M1440 950H1800V1226H1440V950Z"/>
+</mask>
+<path d="M1800 950H1799V1226H1800H1801V950H1800Z" fill="white" fill-opacity="0.5" mask="url(#path-19-inside-9_3_63)"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_3_63">
+<rect width="1800" height="1245" rx="100" fill="white"/>
+</clipPath>
+<clipPath id="clip1_3_63">
+<rect y="-332" width="1800" height="1501" rx="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>

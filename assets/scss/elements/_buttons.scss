@@ -3,64 +3,53 @@
 	align-items: center;
 	justify-content: center;
 	padding: 20px 40px;
-	color: $white;
-	font-family: "Roboto Flex";
 	font-weight: 300;
 	outline: none;
 	border: none;
 	font-size: 20px;
 	line-height: 100%;
 	text-transform: uppercase;
-
+	border-radius: 0;
 }
 
 .btn-primary {
 	background: $blue-1;
-	border: none;
+	color: $white;
 	&:hover {
-		background: inherit;
-		border: 1px solid $white;
+		
 	}
 	&:focus {
-		background: inherit;
-		border: 1px solid $white;
+		
 	}
 	&:active {
-		background: $blue-2;
-		background: inherit;
-		border: 1px solid $white;
+		
 	}
 }
+
 .btn-secondary {
 	background: $blue-1;
-	border: none;
+	color: $white;
 	&:hover {
-		background: $black;
-		border: 1px solid $white;
+		
 	}
 	&:focus {
-		background: $black;
-		border: 1px solid $white;
+		
 	}
 	&:active {
-		background: $blue-2;
-		background: inherit;
-		border: 1px solid $white;
+		
 	}
 }
+
 .btn-black {
 	background: $black;
-	border: none;
+	color: $white;
 	&:hover {
-		background: $black;
-		color: $white;
+		
 	}
 	&:focus {
-		background: $black;
-		color: $white;
+		
 	}
 	&:active {
-		background: $blue-2;
-		color: $white;
+		
 	}
 } 

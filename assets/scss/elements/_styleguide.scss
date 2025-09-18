@@ -202,19 +202,106 @@ template {
     display: none;
 }
 
-.loaderArea {
-    .loader {
-        .fish-1 {
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
+.app-fish-1-animation {
+    -webkit-animation: 1.5s linear 0s normal none infinite running rot;  
+            animation: 1.5s linear 0s normal none infinite running rot; 
+}
+
+.app-fish-2-animation {
+    -webkit-animation: 1.5s linear 0s normal none infinite running rot;  
+            animation: 1.5s linear 0s normal none infinite running rot; 
+}
+
+.loaderArea {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $black;
+    .loader {
+        width: 600px;
+        height: 625px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .fish-1 {
+            width: 358px;
+            height: 358px;
+            position: absolute;
+            top: auto;
+            left: auto;
+            z-index: 1; 
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,.02);
         }
 
         .fish-2 {
-
+            width: 513px;
+            height: 513px;
+            position: absolute;
+            top: auto;
+            left: auto;
+            z-index: 1;         
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,.02); 
         }
 
         .hook {
-            
+            width: 169px;
+            height: 169px;
+            position: absolute;
+            top: auto;
+            left: auto;
+            z-index: 1;            
         }
+    }
+}
+
+@media (min-width: 1460px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1560px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 1660px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1600px;
+    }
+}
+
+@media (min-width: 1760px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1700px;
     }
 }
 
