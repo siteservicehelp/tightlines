@@ -32,6 +32,7 @@
 	    	}
 		}
 
+
 		.menu-block {
 			display: flex;
 			align-items: center;
@@ -45,6 +46,7 @@
 			    outline: none;
 			    color: $white-2;	
 			    text-transform: uppercase;
+
 			    font-weight: 700;
 				font-size: 20px;
 				line-height: 100%;
@@ -162,6 +164,30 @@
 	}
 }
 
+.header-wrapper-2 {
+	.header-block {
+	    display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    padding: 58px 0;
+	    margin-top: 20px;
+		.menu-block {
+			display: flex;
+			align-items: center;
+			.text-bold {
+				border: none;
+			    background: inherit;
+			    color: $black;	
+			    text-transform: uppercase;
+			    img {
+			    	margin-left: 20px;
+			    	vertical-align: baseline;
+			    }
+			}
+		}
+	}
+}
+
 .menu-wrapper {
 	position: fixed;
 	top: -100%;
@@ -260,6 +286,7 @@
 		}
 	}
 }
+
 .films-block {
 	background-color: $black;
 	color: $white;

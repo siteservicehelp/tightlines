@@ -496,6 +496,19 @@ template {
     background: inherit;
     border: 1px solid #fff; }
 
+.btn-black {
+  background: #000;
+  border: none; }
+  .btn-black:hover {
+    background: #000;
+    color: #fff; }
+  .btn-black:focus {
+    background: #000;
+    color: #fff; }
+  .btn-black:active {
+    background: #026CAB;
+    color: #fff; }
+
 /***********************
         FORMS 
 ***********************/
@@ -521,12 +534,9 @@ template {
 body {
   font-family: "Roboto Flex", sans-serif;
   font-size: 20px;
-  line-height: 20px;
   font-style: normal;
   font-weight: 300;
-  font-style: Light;
   line-height: 135%;
-  letter-spacing: 0%;
   color: #000; }
 
 p {
@@ -553,6 +563,9 @@ h2, .h2 {
 
 .text-large {
   font-size: 30px; }
+
+.text-semibold {
+  font-weight: 600; }
 
 .text-bold {
   font-weight: 700; }
@@ -665,6 +678,24 @@ a {
       color: #F7F7F7; }
       .header-wrapper.header-wrapper-open .menu-block .toggle-button .toggle-icon span {
         background: #F7F7F7; }
+
+.header-wrapper-2 .header-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 58px 0;
+  margin-top: 20px; }
+  .header-wrapper-2 .header-block .menu-block {
+    display: flex;
+    align-items: center; }
+    .header-wrapper-2 .header-block .menu-block .text-bold {
+      border: none;
+      background: inherit;
+      color: #000;
+      text-transform: uppercase; }
+      .header-wrapper-2 .header-block .menu-block .text-bold img {
+        margin-left: 20px;
+        vertical-align: baseline; }
 
 .menu-wrapper {
   position: fixed;
@@ -1000,3 +1031,50 @@ a {
 /***********************
         ABOUT 
 ***********************/
+.about-block {
+  margin-top: 68px;
+  margin-bottom: 100px; }
+  .about-block h2 {
+    margin-bottom: 60px; }
+  .about-block p {
+    margin-bottom: 40px; }
+    .about-block p.text-semibold {
+      margin-bottom: 20px; }
+
+.withus-block {
+  text-align: center; }
+  .withus-block h2 {
+    margin-bottom: 30px; }
+  .withus-block .advantages-block {
+    text-align: start;
+    margin-top: 60px;
+    margin-bottom: 101px; }
+    .withus-block .advantages-block .text-large {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #00000080; }
+
+.team-block {
+  position: relative;
+  margin-bottom: 100px; }
+  .team-block h2 {
+    margin-bottom: 60px; }
+  .team-block .swiper {
+    width: 100%;
+    height: 834px;
+    text-transform: uppercase;
+    margin-bottom: 60px; }
+    .team-block .swiper .swiper-slide {
+      display: flex;
+      flex-direction: column; }
+      .team-block .swiper .swiper-slide .text-medium {
+        margin-bottom: 10px; }
+      .team-block .swiper .swiper-slide p {
+        margin-bottom: 20px; }
+      .team-block .swiper .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+  .team-block a {
+    margin-left: 20px; }
