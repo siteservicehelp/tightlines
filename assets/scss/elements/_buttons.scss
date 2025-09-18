@@ -5,7 +5,7 @@
 	padding: 20px 40px;
 	font-weight: 300;
 	outline: none;
-	border: none;
+	border: 1px solid transparent;
 	font-size: 20px;
 	line-height: 100%;
 	text-transform: uppercase;
@@ -43,6 +43,21 @@
 .btn-black {
 	background: $black;
 	color: $white;
+	&:hover {
+		
+	}
+	&:focus {
+		
+	}
+	&:active {
+		
+	}
+}
+
+.btn-outline {
+	background: transparent;
+	color: $white;
+	border: 1px solid $white;
 	&:hover {
 		
 	}

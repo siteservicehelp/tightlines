@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="overflow-hidden">
 <head>
 	<meta charset="UTF-8">
 	<title>TIGHT LINES - Трофейная рыбалка премиум класса</title>
@@ -23,7 +23,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
  
 </head>
-<body>
+<body class="overflow-hidden">
 	<div class="loaderArea">
 		<div class="loader">
 			<span class="fish-1 app-fish-1-animation">
@@ -187,7 +187,7 @@
 						<div class="col-lg-12 p-0">
 							<div class="movies-slider-wrapper">
 								<div class="movies-slider">
-									<div class="single-movie">
+									<div class="single-movie" id="movie1" data-bs-toggle="modal" data-bs-target="#video-modal">
 										<div class="movie-info">
 											<div class="count-number">01</div>
 											<div class="movie-title">Название 1</div>
@@ -196,17 +196,17 @@
 	                                    <div class="cover-wrapper">
 	                                    	<img src="assets/img/movies/sl1.jpg" alt="">
 	                                    </div> 
-	                                    <div class="movie-data">
-	                                    	<button class="app-play-video play-video-btn" data-bs-toggle="modal" data-bs-target="#video-modal">
-	                                    		Смотреть
-	                                    	</button>
+	                                    <button class="app-play-video play-video-btn" id="move1">
+                                    		Смотреть
+                                    	</button>
+	                                    <div class="movie-data">	                                    	
 	                                    	<div class="movie-src d-none">
 	                                    		https://youtu.be/a2qmLGMEbrQ?si=DJqgu05393c1-Hc0
 	                                    	</div>
 	                                    </div> 
 	                                    <div class="empty-block"></div>                                  	
 									</div>			
-									<div class="single-movie">
+									<div class="single-movie" id="movie2" data-bs-toggle="modal" data-bs-target="#video-modal">
 										<div class="movie-info">
 											<div class="count-number">02</div>
 											<div class="movie-title">Название 2</div>
@@ -215,17 +215,17 @@
 	                                    <div class="cover-wrapper">
 	                                    	<img src="assets/img/movies/sl2.jpg" alt="">
 	                                    </div> 
-	                                    <div class="movie-data">
-	                                    	<button class="app-play-video" data-bs-toggle="modal" data-bs-target="#video-modal">
-	                                    		Смотреть
-	                                    	</button>
+	                                    <button class="app-play-video play-video-btn" id="move2">
+                                    		Смотреть
+                                    	</button>
+	                                    <div class="movie-data">	                                    	
 	                                    	<div class="movie-src d-none">
 	                                    		https://youtu.be/s_BRcHgUEL0?si=QrJwK7cyb4S9Un_y
 	                                    	</div>
 	                                    </div> 
 	                                    <div class="empty-block"></div>                                     	
 									</div>
-									<div class="single-movie">
+									<div class="single-movie" id="movie3" data-bs-toggle="modal" data-bs-target="#video-modal">
 										<div class="movie-info">
 											<div class="count-number">03</div>
 											<div class="movie-title">Название 3</div>
@@ -234,17 +234,17 @@
 	                                    <div class="cover-wrapper">
 	                                    	<img src="assets/img/movies/sl3.jpg" alt="">
 	                                    </div> 
-	                                    <div class="movie-data">
-	                                    	<button class="app-play-video" data-bs-toggle="modal" data-bs-target="#video-modal">
-	                                    		Смотреть
-	                                    	</button>
+	                                    <button class="app-play-video play-video-btn" id="move3">
+                                    		Смотреть
+                                    	</button>
+	                                    <div class="movie-data">	                                    	
 	                                    	<div class="movie-src d-none">
 	                                    		https://youtu.be/q8gXXDuJfMA?si=mBvHHFaOI46qXdsc
 	                                    	</div>
 	                                    </div>
 	                                    <div class="empty-block"></div>                                      	
 									</div>	
-									<div class="single-movie">
+									<div class="single-movie" id="movie4" data-bs-toggle="modal" data-bs-target="#video-modal">
 										<div class="movie-info">
 											<div class="count-number">04</div>
 											<div class="movie-title">Название 4</div>
@@ -253,10 +253,10 @@
 	                                    <div class="cover-wrapper">
 	                                    	<img src="assets/img/movies/sl2.jpg" alt="">
 	                                    </div> 
-	                                    <div class="movie-data">
-	                                    	<button class="app-play-video" data-bs-toggle="modal" data-bs-target="#video-modal">
-	                                    		Смотреть
-	                                    	</button>
+	                                    <button class="app-play-video play-video-btn" id="move4">
+                                    		Смотреть
+                                    	</button>
+	                                    <div class="movie-data">	                                    	
 	                                    	<div class="movie-src d-none">
 	                                    		https://youtu.be/uLdcceFiRmo?si=Mno01gyAJqDGHvjk
 	                                    	</div>
