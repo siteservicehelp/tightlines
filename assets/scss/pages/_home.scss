@@ -1,0 +1,16 @@
+@import "../elements/_color_map";
+
+.banner-block {
+	padding: 295px 0 124px;
+	background-image: url('../../assets/img/video.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	color: $white-2;
+	h1 {
+		margin-bottom: 30px;
+	}
+	button {
+		margin-top: 40px;
+	}
+}
