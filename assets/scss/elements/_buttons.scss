@@ -5,52 +5,165 @@
 	padding: 20px 40px;
 	font-weight: 300;
 	outline: none;
-	border: 1px solid transparent;
+	border: none;
 	font-size: 20px;
 	line-height: 100%;
 	text-transform: uppercase;
 	border-radius: 0;
+	position: relative;
+	overflow: hidden;
+
+	span {
+		position: relative;
+		z-index: 1;
+		margin: 0 !important;
+		padding: 0 !important;
+		color: inherit !important;
+	}
 }
 
 .btn-primary {
-	background: $blue-1;
-	color: $white;
+	background: $black;
+	color: $white;	
+
+	&:before {
+		content: '';
+		width: 6475.72px;
+		height: 450.36px;
+		position: absolute;
+		top: -149px;
+		left: -2628px;
+		z-index: 0;
+		transition: all 1s linear;
+		display: block;
+		background: url('../../assets/img/wave/wave.svg') no-repeat top left;
+		background-size: 100% 100%;
+	}
+
 	&:hover {
-		
+		background: $black;
+		color: $white;
+
+		&:before {
+			top: 49px;
+			left: -3573px;
+		}
 	}
 	&:focus {
+		background: $black;
+		color: $white;
 		
+		&:before {
+			top: 49px;
+			left: -3573px;
+		}
 	}
 	&:active {
+		background: $black;
+		color: $white;
 		
+		&:before {
+			top: 49px;
+			left: -3573px;
+		}
 	}
 }
 
 .btn-secondary {
-	background: $blue-1;
-	color: $white;
+	background: $black;
+	color: $white;	
+
+	&:before {
+		content: '';
+		width: 6475.72px;
+		height: 450.36px;
+		position: absolute;
+		top: -149px;
+		left: -2628px;
+		z-index: 0;
+		transition: all 1s linear;
+		display: block;
+		background: url('../../assets/img/wave/wave.svg') no-repeat top left;
+		background-size: 100% 100%;
+	}
+
 	&:hover {
-		
+		background: $black;
+		color: $white;
+
+		&:before {
+			top: 49px;
+			left: -3573px;
+		}
 	}
+
 	&:focus {
+		background: $black;
+		color: $white;
 		
+		&:before {
+			top: 49px;
+			left: -3573px;
+		}
 	}
+
 	&:active {
+		background: $black;
+		color: $white;
 		
+		&:before {
+			top: 49px;
+			left: -3573px;
+		}
 	}
 }
 
 .btn-black {
 	background: $black;
 	color: $white;
+
+	&:before {
+		content: '';
+		width: 6475.72px;
+		height: 450.36px;
+		position: absolute;
+		top: 49px;
+		left: -3573px;
+		z-index: 0;
+		transition: all 1s linear;
+		display: block;
+		background: url('../../assets/img/wave/wave.svg') no-repeat top left;
+		background-size: 100% 100%;
+	}
+
 	&:hover {
-		
+		background: $black;
+		color: $white;
+
+		&:before {			
+			top: -149px;
+			left: -2628px;
+		}
 	}
+
 	&:focus {
+		background: $black;
+		color: $white;
 		
+		&:before {
+			top: -149px;
+			left: -2628px;
+		}
 	}
+
 	&:active {
+		background: $black;
+		color: $white;
 		
+		&:before {
+			top: -149px;
+			left: -2628px;
+		}
 	}
 }
 
@@ -58,28 +171,102 @@
 	background: transparent;
 	color: $white;
 	border: 1px solid $white;
+	transition: border .8s linear;
+
+	&:before {
+		content: '';
+		width: 6475.72px;
+		height: 450.36px;
+		position: absolute;
+		top: 49px;
+		left: -3573px;
+		z-index: 0;
+		transition: all 1s linear;
+		display: block;
+		background: url('../../assets/img/wave/wave.svg') no-repeat top left;
+		background-size: 100% 100%;
+	}
+
 	&:hover {
-		
+		background: transparent;
+		color: $white;
+		border: 1px solid $blue-1;
+
+		&:before {			
+			top: -149px;
+			left: -2628px;
+		}
 	}
+
 	&:focus {
+		background: transparent;
+		color: $white;
+		border: 1px solid $blue-1;
 		
+		&:before {
+			top: -149px;
+			left: -2628px;
+		}
 	}
+
 	&:active {
+		background: transparent;
+		color: $white;
+		border: 1px solid $blue-1;
 		
+		&:before {
+			top: -149px;
+			left: -2628px;
+		}
 	}
 } 
 
 .btn-white {
 	background: $white;
 	color: $black;
-	border: 1px solid $white;
+	transition: color .6s linear;
+
+	&:before {
+		content: '';
+		width: 6475.72px;
+		height: 450.36px;
+		position: absolute;
+		top: 49px;
+		left: -3573px;
+		z-index: 0;
+		transition: all 1s linear;
+		display: block;
+		background: url('../../assets/img/wave/wave.svg') no-repeat top left;
+		background-size: 100% 100%;
+	}
+
 	&:hover {
-		
+		background: $white;
+		color: $white;
+
+		&:before {			
+			top: -149px;
+			left: -2628px;
+		}
 	}
+
 	&:focus {
+		background: $white;
+		color: $white;
 		
+		&:before {
+			top: -149px;
+			left: -2628px;
+		}
 	}
+
 	&:active {
+		background: $white;
+		color: $white;
 		
+		&:before {
+			top: -149px;
+			left: -2628px;
+		}
 	}
 } 
