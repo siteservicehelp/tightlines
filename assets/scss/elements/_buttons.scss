@@ -68,3 +68,18 @@
 		
 	}
 } 
+
+.btn-white {
+	background: $white;
+	color: $black;
+	border: 1px solid $white;
+	&:hover {
+		
+	}
+	&:focus {
+		
+	}
+	&:active {
+		
+	}
+} 
