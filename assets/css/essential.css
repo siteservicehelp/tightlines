@@ -2309,3 +2309,31 @@ template {
 /***********************
         CONTACTS 
 ***********************/
+.contact-block h1 {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  text-transform: uppercase; }
+.contact-block .contacts-information h3 {
+  margin-bottom: 30px; }
+  .contact-block .contacts-information h3:nth-child(3) {
+    margin-bottom: 20px; }
+.contact-block .contacts-information .information-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; }
+  .contact-block .contacts-information .information-block a {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #000; }
+.contact-block .contacts-information .subscribe-block {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase; }
+  .contact-block .contacts-information .subscribe-block a {
+    color: #000; }
+.contact-block .subscribe-form-wrapper h3 {
+  margin-bottom: 40px; }
+.contact-block .subscribe-form-wrapper form .form-group {
+  margin-bottom: 30px; }
+  .contact-block .subscribe-form-wrapper form .form-group:nth-last-child(2) {
+    margin-bottom: 20px; }
