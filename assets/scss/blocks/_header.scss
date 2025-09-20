@@ -8,6 +8,10 @@
 	background: transparent;
 	transition: all .2s ease-in-out;
 
+	@media screen and (max-width: 991.9px) {
+		padding: 58px 0;
+	}
+
 	.header-block {
 		width: 100%;
 	    display: flex;
@@ -111,7 +115,11 @@
 	&.header-sticky {
 		padding: 20px 0;
 		background: $white;
-		//border-bottom: 1px solid $gray-1;
+
+		@media screen and (max-width: 991.9px) {
+			padding: 20px 0;
+		}
+		
 		.logo-block {
 	    	a {
 	    		img {

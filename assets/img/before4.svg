@@ -1,0 +1,38 @@
+<svg width="940" height="870" viewBox="0 0 940 870" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_2_6" fill="white">
+<path d="M0 -319H230.75V270H0V-319Z"/>
+</mask>
+<path d="M230.75 -319H229.75V270H230.75H231.75V-319H230.75ZM0 270H1V-319H0H-1V270H0Z" fill="white" fill-opacity="0.5" mask="url(#path-1-inside-1_2_6)"/>
+<mask id="path-3-inside-2_2_6" fill="white">
+<path d="M230.75 -319H461.5V270H230.75V-319Z"/>
+</mask>
+<path d="M461.5 -319H460.5V270H461.5H462.5V-319H461.5Z" fill="white" fill-opacity="0.5" mask="url(#path-3-inside-2_2_6)"/>
+<mask id="path-5-inside-3_2_6" fill="white">
+<path d="M461.5 -319H692.25V270H461.5V-319Z"/>
+</mask>
+<path d="M692.25 -319H691.25V270H692.25H693.25V-319H692.25Z" fill="white" fill-opacity="0.5" mask="url(#path-5-inside-3_2_6)"/>
+<mask id="path-7-inside-4_2_6" fill="white">
+<path d="M692.25 -319H923V270H692.25V-319Z"/>
+</mask>
+<path d="M923 -319H922V270H923H924V-319H923Z" fill="white" fill-opacity="0.5" mask="url(#path-7-inside-4_2_6)"/>
+<mask id="path-9-inside-5_2_6" fill="white">
+<path d="M0 685H188V870H0V685Z"/>
+</mask>
+<path d="M188 685H187V870H188H189V685H188ZM0 870H1V685H0H-1V870H0Z" fill="white" fill-opacity="0.5" mask="url(#path-9-inside-5_2_6)"/>
+<mask id="path-11-inside-6_2_6" fill="white">
+<path d="M188 685H376V870H188V685Z"/>
+</mask>
+<path d="M376 685H375V870H376H377V685H376Z" fill="white" fill-opacity="0.5" mask="url(#path-11-inside-6_2_6)"/>
+<mask id="path-13-inside-7_2_6" fill="white">
+<path d="M376 685H564V870H376V685Z"/>
+</mask>
+<path d="M564 685H563V870H564H565V685H564Z" fill="white" fill-opacity="0.5" mask="url(#path-13-inside-7_2_6)"/>
+<mask id="path-15-inside-8_2_6" fill="white">
+<path d="M564 685H752V870H564V685Z"/>
+</mask>
+<path d="M752 685H751V870H752H753V685H752Z" fill="white" fill-opacity="0.5" mask="url(#path-15-inside-8_2_6)"/>
+<mask id="path-17-inside-9_2_6" fill="white">
+<path d="M752 685H940V870H752V685Z"/>
+</mask>
+<path d="M940 685H939V870H940H941V685H940Z" fill="white" fill-opacity="0.5" mask="url(#path-17-inside-9_2_6)"/>
+</svg>

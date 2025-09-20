@@ -1,0 +1,38 @@
+<svg width="1360" height="1263" viewBox="0 0 1360 1263" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_1_19" fill="white">
+<path d="M0 0H330.5V346H0V0Z"/>
+</mask>
+<path d="M330.5 0H329.5V346H330.5H331.5V0H330.5ZM0 346H1V0H0H-1V346H0Z" fill="white" fill-opacity="0.5" mask="url(#path-1-inside-1_1_19)"/>
+<mask id="path-3-inside-2_1_19" fill="white">
+<path d="M330.5 0H661V346H330.5V0Z"/>
+</mask>
+<path d="M661 0H660V346H661H662V0H661Z" fill="white" fill-opacity="0.5" mask="url(#path-3-inside-2_1_19)"/>
+<mask id="path-5-inside-3_1_19" fill="white">
+<path d="M661 0H991.5V346H661V0Z"/>
+</mask>
+<path d="M991.5 0H990.5V346H991.5H992.5V0H991.5Z" fill="white" fill-opacity="0.5" mask="url(#path-5-inside-3_1_19)"/>
+<mask id="path-7-inside-4_1_19" fill="white">
+<path d="M991.5 0H1322V346H991.5V0Z"/>
+</mask>
+<path d="M1322 0H1321V346H1322H1323V0H1322Z" fill="white" fill-opacity="0.5" mask="url(#path-7-inside-4_1_19)"/>
+<mask id="path-9-inside-5_1_19" fill="white">
+<path d="M0 987H264.4V1263H0V987Z"/>
+</mask>
+<path d="M264.4 987H263.4V1263H264.4H265.4V987H264.4ZM0 1263H1V987H0H-1V1263H0Z" fill="white" fill-opacity="0.5" mask="url(#path-9-inside-5_1_19)"/>
+<mask id="path-11-inside-6_1_19" fill="white">
+<path d="M264.4 987H528.8V1263H264.4V987Z"/>
+</mask>
+<path d="M528.8 987H527.8V1263H528.8H529.8V987H528.8Z" fill="white" fill-opacity="0.5" mask="url(#path-11-inside-6_1_19)"/>
+<mask id="path-13-inside-7_1_19" fill="white">
+<path d="M528.8 987H793.2V1263H528.8V987Z"/>
+</mask>
+<path d="M793.2 987H792.2V1263H793.2H794.2V987H793.2Z" fill="white" fill-opacity="0.5" mask="url(#path-13-inside-7_1_19)"/>
+<mask id="path-15-inside-8_1_19" fill="white">
+<path d="M793.2 987H1057.6V1263H793.2V987Z"/>
+</mask>
+<path d="M1057.6 987H1056.6V1263H1057.6H1058.6V987H1057.6Z" fill="white" fill-opacity="0.5" mask="url(#path-15-inside-8_1_19)"/>
+<mask id="path-17-inside-9_1_19" fill="white">
+<path d="M1057.6 987H1322V1263H1057.6V987Z"/>
+</mask>
+<path d="M1322 987H1321V1263H1322H1323V987H1322Z" fill="white" fill-opacity="0.5" mask="url(#path-17-inside-9_1_19)"/>
+</svg>
