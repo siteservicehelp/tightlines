@@ -1643,7 +1643,8 @@ template {
   .about-block h2 {
     margin: 0;
     color: #000;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    white-space: nowrap; }
   .about-block .main-info {
     padding-top: 55px;
     margin-bottom: 0; }
