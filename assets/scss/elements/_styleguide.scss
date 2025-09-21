@@ -1,7 +1,7 @@
 html {
     width: 100%;   
-    overflow-x:hidden;
-    overflow-y: auto;
+    /*overflow-x:hidden;
+    overflow-y: auto;*/
 }
 
 body {
@@ -13,7 +13,11 @@ body {
     position: relative;  
     display: flex;
     flex-direction: column;
-    align-items: stretch;     
+    align-items: stretch;    
+
+    &.overflow-hidden {
+        padding-right: 15px;
+    } 
 }
 
 .scrollup {
@@ -285,17 +289,29 @@ template {
 
             .fish-1 {
                 width: 238px;
-                height: 238px;                
+                height: 238px;    
+                svg {
+                    width: 238px;
+                    height: 238px;    
+                }            
             }
 
             .fish-2 {
                 width: 342px;
-                height: 342px;                
+                height: 342px;   
+                svg {
+                    width: 342px;
+                    height: 342px;    
+                }             
             }
 
             .hook {
                 width: 112px;
-                height: 112px;                        
+                height: 112px;    
+                svg {
+                    width: 112px;
+                    height: 112px;    
+                }                      
             }
         }
 
@@ -305,17 +321,29 @@ template {
 
             .fish-1 {
                 width: 119px;
-                height: 119px;                
+                height: 119px; 
+                svg {
+                    width: 119px;
+                    height: 119px;    
+                }                 
             }
 
             .fish-2 {
                 width: 171px;
-                height: 171px;                
+                height: 171px;  
+                svg {
+                    width: 171px;
+                    height: 171px;    
+                }                
             }
 
             .hook {
                 width: 56px;
-                height: 56px;                        
+                height: 56px;  
+                svg {
+                    width: 56px;
+                    height: 56px;    
+                }                       
             }
         }
     }

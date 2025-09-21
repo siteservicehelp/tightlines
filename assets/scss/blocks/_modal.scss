@@ -1,15 +1,16 @@
 .modal {
 	.modal-content {
 		background: $black;
-		padding: 90px 30px 30px;
+		padding: 70px 30px 30px;
 		position: relative;
 		color: $white;
 		border-radius: 0;
 
 		.btn-close {
 			position: absolute;
-			top: 30px;
-			right: 30px;
+			top: 20px;
+			right: 20px;
+			z-index: 9999;
 			color: $white;
 			opacity: 1 !important;
 			background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414'/%3e%3c/svg%3e") center / 1em auto no-repeat;
@@ -150,9 +151,24 @@
 }
 
 .video-modal {
+	.modal-content {
+		padding: 0;
+		.modal-body {
+			padding: 0;
+			height: 100%;
+		    overflow-y: hidden;
+		}
+	}
+
+	.youtube-frame {
+		height: 100%;
+	}
+
 	iframe {
 		width: 100%;
-		height: auto;
+		height: 100%;
+		object-fit: contain;
+		object-position: center;
 	}
 }
 
@@ -160,8 +176,19 @@
     .modal-dialog {
         max-width: 600px;
     }
+
+    .modal-fullscreen {
+	    width: 100vw;
+	    max-width: none;
+	    height: 100%;
+	    margin: 0;
+	}
 }
 
 .modal-backdrop.show {
     opacity: .8;
+}
+
+.modal-backdrop {
+    background-color: #252525;
 }
