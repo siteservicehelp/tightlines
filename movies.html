@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru" class="overflow-hidden">
+<head>
+	<meta charset="UTF-8">
+	<title>TIGHT LINES - Трофейная рыбалка премиум класса</title>
+    <meta name="description" content="">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">     
+
+    <!--style-->
+    <link rel="stylesheet" href="style.css">   
+
+    <!--favicon
+    <link href="assets/img/favicon.png" rel="icon" type="image/x-icon">  -->   
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+	<header class="header-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header-block">
+						<div class="logo-block">
+							<a href="/">
+								<img src="assets/img/logovector.svg" alt="logo">
+							</a>
+						</div>
+						<div class="menu-block">
+							<button class="app-toggle-button toggle-button">
+								Меню
+								<span class="toggle-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+							</button>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>		
+	</header>
+
+	<div class="menu-wrapper">
+		<div class="container h-100">
+			<div class="row h-100 justify-content-between">
+				<div class="col-xl-5 col-lg-3 col-12 d-none d-lg-block"></div>
+				<div class="col-xl-3 col-lg-4 col-6 p-0">
+					<ul class="menu">
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Фильмы</a>
+						</li>
+						<li>
+							<a href="#">Экспедиции</a>
+						</li>
+						<li>
+							<a href="#">Галерея</a>
+						</li>
+						<li>
+							<a href="#">Товары</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xl-4 col-lg-5 col-6 p-0">
+					<ul class="social-links">
+						<li>
+							<a href="#" target="_blank">
+								<svg class="icon" width="25" height="18">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-youtube"></use>
+							    </svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<svg class="icon" width="26" height="20">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-telegram"></use>
+							    </svg>
+							</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<svg class="icon" width="31" height="30">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-instagram"></use>
+							    </svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-12 p-0">
+					<div class="huge-logo-title">
+						TIGHT LINES
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<main>
+		
+		<div class="single-movie youtube" id="movie1" data-bs-toggle="modal" data-bs-target="#video-modal" data-title="Text 1" data-embed="a2qmLGMEbrQ?si=DJqgu05393c1-Hc0">
+			<div class="movie-info">
+				<div class="count-number">01</div>
+				<div class="movie-title">Название 1</div>
+                <div class="movie-year">2024</div>
+			</div>									
+            <div class="cover-wrapper">
+            	<img src="assets/img/movies/sl1.jpg" alt="">
+            </div> 
+            <button class="app-play-video play-video-btn" id="move1">
+        		Смотреть
+        	</button>	                                	
+		</div>
+
+	</main>
+
+	<footer class="footer-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer-widgets">
+						<div class="footer-menu">
+							<ul>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Фильмы</a></li>
+								<li><a href="#">Экспедиции</a></li>
+								<li><a href="#">Галерея</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="social-links">
+							<a href="#" target="_blank">
+								<svg class="icon" width="25" height="18">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-youtube"></use>
+							    </svg>
+							</a>						
+							<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#tg">
+								<svg class="icon" width="26" height="20">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-telegram"></use>
+							    </svg>
+							</a>					
+							<a href="#" target="_blank">
+								<svg class="icon" width="31" height="30">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-instagram"></use>
+							    </svg>
+							</a>						
+						</div>
+						<div class="copyright-block">
+							<span>©  «компания», 2025</span>
+							<a href="#" download="" target="_blank">Политика конфиденциальности</a>
+						</div>
+						<div class="footer-logo">
+							<span>TIGHT LINES</span>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade callback-modal" id="callback" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="orderLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      		<div class="modal-body">
+	      			<h3>Свяжитесь с нами</h3>
+	      			<p>Lorem ipsum dolor sit amet consectetur. Ridiculus vel vitae.Lorem ipsum dolor sit amet consectetur. Ridiculus vel vitae.</p>	        		
+	        		<form action="">						
+						<div class="form-group form-floating">
+							<input type="text" name="your-name2" id="your-name2" class="form-control" placeholder="Ваше имя *" required="">
+							<label for="your-name2">Ваше имя *</label>
+						</div>
+						<div class="form-group form-floating">
+							<input type="tel" name="your-tel2" id="your-tel2" class="form-control" placeholder="Введите номер телефона">
+							<label for="your-tel2">Введите номер телефона</label>
+						</div>
+						<div class="form-group form-floating">
+							<input type="email" name="your-email2" id="your-email2" class="form-control" placeholder="Введите вашу почту*" required="">
+							<label for="your-email2">Введите вашу почту*</label>
+						</div>
+						<div class="form-group form-floating">
+							<input type="text" name="your-comment2" id="your-comment2" class="form-control" placeholder="Комментарий">
+							<label for="your-comment2">Комментарий</label>
+						</div>						
+						<div class="form-group">
+							<div class="form-check mb-0">
+							  	<input class="form-check-input" type="checkbox" value="" id="checkAgree" checked required="">
+							  	<label class="form-check-label" for="checkAgree">
+							    	Я соглашаюсь с условиями <a href="#" download="" target="_blank">пользовательского соглашения</a> и <a href="#" download="" target="_blank">политикой обработки персональных данных</a>
+							  	</label>
+							</div>
+						</div>
+						<div class="form-group mb-0">
+							<button class="btn btn-primary" type="submit"><span>Отправить</span></button>
+							<!--<input type="submit" name="submit-btn" id="submit-btn" class="btn btn-primary" placeholder="Забронировать" value="Забронировать">-->
+						</div>
+					</form>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade video-modal" id="video-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="orderLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered modal-fullscreen" role="document">
+	    	<div class="modal-content">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      		<div class="modal-body">
+	        		<div class="text-center youtube-frame"></div>
+	      		</div>	      		
+	    	</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade tg-modal" id="tg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="orderLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      		<div class="modal-body">
+	      			<h3>Следите за новостями в нашем  Телеграм канале</h3>
+	      			<div class="img-wrapper">
+	      				<img src="assets/img/logomodal.svg" alt="">
+	      			</div>	        		
+	        		<p>TIGHT LINES | Морская рыбалка</p>
+	        		<a href="#" class="btn btn-white"><span>Подписаться</span></a>
+	      		</div>	      		
+	    	</div>
+	  	</div>
+	</div>
+    
+    <!-- Подключение скриптов -->
+    
+    <!-- jQuery -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- Swiper -->    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Custom Scripts -->	
+	<script src="assets/js/common.js"></script>
+	<script src="assets/js/movies.js"></script>
+
+	<script>
+		/*var youtube = document.querySelectorAll(".youtube");
+
+	    for (var i = 0; i < youtube.length; i++) {
+
+	        var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/default.jpg";
+	        var y_alt = "Изображение " + youtube[i].dataset.title;
+	        var y_title = youtube[i].dataset.title;
+
+	        var image = new Image();
+	        image.src = source;
+	        image.classList = "lazyloaded";
+	        image.setAttribute("loading", "lazy");
+	        image.setAttribute("data-src", source);
+	        image.setAttribute("alt", y_alt);
+	        image.setAttribute("title", y_title);
+	        image.addEventListener("load", function() {
+	            youtube[i].querySelector('.cover-wrapper').prepend(image);
+	        }(i));
+
+	        var videoTitle = youtube[i].querySelector('.movie-title');
+	        videoTitle.addEventListener("load", function() {
+	            videoTitle.innerHTML = y_title;
+	        }(i));
+
+	        youtube[i].addEventListener("click", function() {
+
+	            var iframe = document.createElement("iframe");                          
+
+	            iframe.setAttribute("frameborder", "0");
+	            iframe.setAttribute("allowfullscreen", "true");
+	            iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+
+	            document.querySelector('.youtube-frame').innerHTML = "";
+	            document.querySelector('.youtube-frame').appendChild(iframe);
+
+	            return false;
+	        });
+	    };*/
+	</script>
+
+</body>
+</html>

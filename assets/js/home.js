@@ -11,6 +11,18 @@
         $(this).addClass('active') 
     });
 
+
+    /*Video modal*/
+    var videoSrc = $("#video-modal iframe").attr("src");
+    $('#video-modal').on('show.bs.modal', function () { // on opening the modal
+      // set the video to autostart
+      $("#video-modal iframe").attr("src", videoSrc+"&amp;autoplay=0");
+    });
+    $("#video-modal").on('hidden.bs.modal', function (e) { // on closing the modal
+      // stop the video
+      $("#video-modal iframe").attr("src", null);
+    });
+
 }) })(jQuery)
 
 
@@ -59,4 +71,5 @@ window.addEventListener('load', () => {
         //waitForTransition: false,
         //pauseOnMouseEnter: true,
     });
+    
 });

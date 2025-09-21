@@ -1,0 +1,132 @@
+@import "../elements/_color_map";
+
+.single-movie {
+	background: $black;
+	border: 1px solid rgba(255, 255, 255, 0.5);						
+	position: relative;
+	display: block;
+	width: 100%;
+	float: left;				
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	cursor: pointer;
+
+	.movie-info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 3;
+		width: 100%;
+		height: 640px;		
+
+		.movie-title {
+			position: absolute;
+			top: 40px;
+			right: 40px;
+			z-index: 3;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 100%;
+			text-transform: uppercase;
+			color: rgba(255, 255, 255, 1);
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			opacity: 0;	
+
+			@media screen and (max-width: 767.9px) {
+				top: 10px;
+				right: 10px;
+				font-size: 16px;
+			}					
+		}
+
+		.movie-year {
+			position: absolute;
+			bottom: 40px;
+			right: 40px;
+			z-index: 3;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 100%;
+			text-transform: uppercase;
+			color: rgba(255, 255, 255, 1);
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			opacity: 0;
+
+			@media screen and (max-width: 767.9px) {
+				bottom: 10px;
+				right: 10px;
+				font-size: 16px;
+			}	
+		}
+	}
+
+	.cover-wrapper {
+		position: relative;					
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			background: rgba(0,0,0,.3);
+			pointer-events: none;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		img {
+			width: 100%;
+			height: 640px;
+			object-position: center;
+			object-fit: cover;
+			position: relative;
+			z-index: 1;
+			display: block;
+			transition: all 0.5s;
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+
+	.play-video-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		opacity: 1;
+		mix-blend-mode: Exclusion;
+		background: $blue-1;
+		color: $white;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 100%;
+		text-align: center;
+		text-transform: uppercase;	
+		left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    position: fixed;
+		z-index: 555;
+		opacity: 0;		
+		pointer-events: none;
+		transition: all .25s linear;
+		-webkit-transition: all .25s linear;
+		-moz-transition: all .25s linear;	
+		cursor: pointer;
+
+		@media screen and (max-width: 767.9px) {
+			width: 75px;
+	        height: 75px;
+	        font-size: 10px;
+		}			
+	}
+}

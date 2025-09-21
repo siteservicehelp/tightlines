@@ -13,6 +13,10 @@
 		padding: 216px 0 80px;
 	}
 
+	@media screen and (max-width: 767.9px) {
+		padding: 168px 0 40px;
+	}
+
 	&:before {
 		content: '';
 		width: 100%;
@@ -56,6 +60,10 @@
 
 	button {
 		margin-top: 40px;
+
+		@media screen and (max-width: 767.9px) {
+			min-width: 240px;
+		}
 	}
 }
 
@@ -69,11 +77,19 @@
 		margin: 80px 0;
 	}
 
+	@media screen and (max-width: 767.9px) {
+		margin: 70px 0;
+	}
+
 	h2 {
 		margin: 0;
 		color: $black;
 		text-transform: uppercase;
 		white-space: nowrap;
+
+		@media screen and (max-width: 767.9px) {
+			font-size: 60px;
+		}
 	}
 
 	.main-info {
@@ -83,8 +99,8 @@
 			padding-top: 70px;
 		}
 
-		@media screen and (max-width: 991.9px) {
-			//padding-top: 0px;
+		@media screen and (max-width: 767.9px) {
+			padding-top: 0;
 		}
 	}
 
@@ -96,6 +112,10 @@
 		gap: 20px;
 		margin-top: 25px;
 
+		@media screen and (max-width: 767.9px) {
+			flex-wrap: wrap;
+		}
+
 		img {
 			width: 435px;
 			min-width: 435px;
@@ -105,6 +125,11 @@
 			@media screen and (max-width: 1499.9px) {
 				width: 370px;
 				min-width: 370px;
+			}
+
+			@media screen and (max-width: 767.9px) {
+				width: 100%;
+				min-width: 100%;
 			}
 		}
 
@@ -119,6 +144,10 @@
 
 			@media screen and (max-width: 991.9px) {
 				flex-wrap: wrap;
+			}
+
+			@media screen and (max-width: 767.9px) {
+				width: 100%;
 			}
 		}
 
@@ -160,6 +189,10 @@
 				height: auto;
 			}
 
+			@media screen and (max-width: 767.9px) {
+				margin-top: 65px;
+			}
+
 			.btn {
 				min-width: 270px;
 			}
@@ -176,6 +209,11 @@
 	padding: 38px 0;
 	position: relative;
 	margin-bottom: 40px;
+
+	@media screen and (max-width: 767.9px) {
+		padding: 0;
+		margin-bottom: 80px;
+	}
 
 	.container {
 		height: 100%;
@@ -203,6 +241,11 @@
 
 			@media screen and (max-width: 991.9px) {
 				background: url('../../assets/img/before4.svg') no-repeat center right;
+				background-size: 100% auto;
+			}
+
+			@media screen and (max-width: 767.9px) {
+				background: url('../../assets/img/before5.svg') no-repeat bottom 50% left;
 				background-size: 100% auto;
 			}
 		}
@@ -236,11 +279,21 @@
 			font-size: 80px;
 		}
 
+		@media screen and (max-width: 767.9px) {
+			margin: 70px 0 25px -200px;
+			font-size: 54px;
+		}
+
 		span {
 			display: block;
 			padding-left: 525px;
+
+			@media screen and (max-width: 767.9px) {
+				padding-left: 300px;
+			}
 		}
 	}
+
 	.movies-slider-wrapper {
 		width: 100%; 
 		height: 640px;
@@ -262,6 +315,10 @@
 
 					@media screen and (max-width: 991.9px) {
 						width: 78px;
+					}
+
+					@media screen and (max-width: 767.9px) {
+						width: 37px;
 					}
 
 					.movie-info {
@@ -309,6 +366,10 @@
 
 				@media screen and (max-width: 991.9px) {
 					width: 78px;
+				}
+
+				@media screen and (max-width: 767.9px) {
+					width: 37px;
 				}
 
 				&:before {
@@ -363,6 +424,12 @@
 						line-height: 100%;
 						text-transform: uppercase;
 						color: rgba(255, 255, 255, 0.5);
+
+						@media screen and (max-width: 767.9px) {
+							bottom: 10px;
+							left: 10px;
+							font-size: 16px;
+						}
 					}
 
 					.movie-title {
@@ -378,7 +445,13 @@
 						transition: all 0.5s;
 						-webkit-transition: all 0.5s;
 						-moz-transition: all 0.5s;
-						opacity: 0;						
+						opacity: 0;	
+
+						@media screen and (max-width: 767.9px) {
+							top: 10px;
+							right: 10px;
+							font-size: 16px;
+						}					
 					}
 
 					.movie-year {
@@ -395,6 +468,12 @@
 						-webkit-transition: all 0.5s;
 						-moz-transition: all 0.5s;
 						opacity: 0;
+
+						@media screen and (max-width: 767.9px) {
+							bottom: 10px;
+							right: 10px;
+							font-size: 16px;
+						}	
 					}
 				}
 
@@ -454,7 +533,13 @@
 					transition: all .25s linear;
 					-webkit-transition: all .25s linear;
 					-moz-transition: all .25s linear;	
-					cursor: pointer;		
+					cursor: pointer;
+
+					@media screen and (max-width: 767.9px) {
+						width: 75px;
+				        height: 75px;
+				        font-size: 10px;
+					}			
 				}
 
 				.movie-data {
@@ -501,6 +586,10 @@
 
 					@media screen and (max-width: 991.9px) {
 						width: calc(100% - 234px);
+					}
+
+					@media screen and (max-width: 767.9px) {
+						width: calc(100% - 111px);
 					}
 
 					.movie-info {
@@ -572,6 +661,48 @@
 				}
 			}
 		}
+
+		@media screen and (max-width: 767.9px) {
+			margin-bottom: 60px;
+			height: 230px;
+
+			.movies-slider {
+				height: 230px;
+
+				.single-movie {
+					.movie-info {
+						height: 230px;	
+					}
+
+					.cover-wrapper {
+						img {
+							height: 230px;
+						}
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 575.9px) {
+			margin-bottom: 60px;
+			height: 143px;
+
+			.movies-slider {
+				height: 143px;
+
+				.single-movie {
+					.movie-info {
+						height: 143px;	
+					}
+
+					.cover-wrapper {
+						img {
+							height: 143px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.all-movies-page {
@@ -596,6 +727,10 @@
 		padding-bottom: 100px;
 	}
 
+	@media screen and (max-width: 767.9px) {
+		padding-bottom: 70px;
+	}
+
 	.top-part {
 		width: 100%;
 		display: flex;
@@ -614,6 +749,10 @@
 				margin-bottom: 0;
 				color: $white;
 				text-transform: uppercase;
+
+				@media screen and (max-width: 767.9px) {
+					width: 100%;					
+				}
 			}
 
 			.expeditions-slider-nav {
@@ -650,6 +789,14 @@
 				width: 100%;
 				max-width: 648px;
 			}
+
+			@media screen and (max-width: 767.9px) {
+				width: 100%;
+				max-width: 100%;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				gap: 10px;
+			}
 		}
 
 		.right-part {
@@ -657,10 +804,16 @@
 			.btn {
 				min-width: 194px;
 			}
+
+			@media screen and (max-width: 767.9px) {
+				width: 100%;
+			}
 		}
 
-		@media screen and (max-width: 991.9px) {
-			
+		@media screen and (max-width: 767.9px) {
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -762,6 +915,12 @@
 						.btn {
 							min-width: 240px;
 						}
+
+						@media screen and (max-width: 767.9px) {
+							flex-wrap: wrap;
+							justify-content: flex-start;
+							gap: 20px;
+						}
 					}
 				}
 			}
@@ -778,11 +937,20 @@
 			@media screen and (max-width: 1499.9px) {
 				max-width: 610px;
 			}
+
+			@media screen and (max-width: 767.9px) {
+				max-width: 100%;			
+			}
 		}
 
 		@media screen and (max-width: 991.9px) {			
 			text-align: center;
 			margin-bottom: 30px;
+		}
+
+		@media screen and (max-width: 767.9px) {			
+			text-align: center;
+			margin-bottom: 50px;
 		}
 	}
 }
@@ -797,6 +965,10 @@
 		margin: 160px 0 80px;
 	}
 
+	@media screen and (max-width: 767.9px) {
+		margin: 140px 0 70px;
+	}
+
 	.gallery-wrapper {
 		width: 100%;
 		display: flex;
@@ -804,6 +976,11 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 40px;
+
+		@media screen and (max-width: 767.9px) {
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
 	}
 	.gallery-info {
 		width: 100%;
@@ -812,6 +989,11 @@
 		@media screen and (max-width: 991.9px) {
 			max-width: 334px;
 		}
+
+		@media screen and (max-width: 991.9px) {
+			max-width: 100%;
+		}
+		
 		
 		h2 {
 			color: $black;
@@ -839,6 +1021,11 @@
 				.swiper-slide {
 					width: 100%;
 					height: calc(100% - 120px);
+
+					@media screen and (max-width: 767.9px) {
+						height: calc(100% - 80px);
+					}
+
 					img {
 						width: 100%;
 						height: 100%;
@@ -847,15 +1034,6 @@
 					}
 				}
 			}
-		}		
-
-		@media screen and (max-width: 1499.9px) {
-			height: 760px;
-		}
-
-		@media screen and (max-width: 991.9px) {
-			height: 520px;
-			width: calc(100% - 374px);
 		}
 
 		@media screen and (max-height: 1100px) {
@@ -877,6 +1055,20 @@
 		@media screen and (max-height: 660px) {
 			height: 500px;
 		}
+
+		@media screen and (max-width: 1499.9px) {
+			height: 760px;
+		}
+
+		@media screen and (max-width: 991.9px) {
+			height: 520px;
+			width: calc(100% - 374px);
+		}
+
+		@media screen and (max-width: 767.9px) {
+			height: 330px;
+			width: 100%;
+		}
 	}
 }
 
@@ -885,6 +1077,10 @@
 
 	@media screen and (max-width: 991.9px) {
 		margin: 0 0 80px;
+	}
+
+	@media screen and (max-width: 767.9px) {
+		margin: 0 0 70px;
 	}
 
 	h2 {
@@ -901,10 +1097,16 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
+
+		@media screen and (max-width: 767.9px) {
+			height: 364px;
+			margin-bottom: 60px;
+		}
 	}
 
 	.contacts-form-wrapper {
 		padding-left: 30px;
+
 		h3 {
 			margin-bottom: 30px;
 		}
@@ -921,6 +1123,14 @@
 		.btn {
 			min-width: 240px;
 			margin-top: 10px;
+		}
+
+		@media screen and (max-width: 767.9px) {
+			padding-left: 0px;
+
+			h3 {
+				margin-bottom: 40px;
+			}
 		}
 	}
 }
