@@ -10,6 +10,12 @@
         preloader.delay(500).fadeOut('slow');
     });
 
+
+
+    setTimeout(function() {
+        $('#tg').modal('show');
+    }, 100000);
+
 }) })(jQuery)
 
 
