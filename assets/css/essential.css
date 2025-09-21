@@ -672,12 +672,21 @@ template {
         .loaderArea .loader .fish-1 {
           width: 238px;
           height: 238px; }
+          .loaderArea .loader .fish-1 svg {
+            width: 238px;
+            height: 238px; }
         .loaderArea .loader .fish-2 {
           width: 342px;
           height: 342px; }
+          .loaderArea .loader .fish-2 svg {
+            width: 342px;
+            height: 342px; }
         .loaderArea .loader .hook {
           width: 112px;
-          height: 112px; } }
+          height: 112px; }
+          .loaderArea .loader .hook svg {
+            width: 112px;
+            height: 112px; } }
     @media screen and (max-width: 479.9px) {
       .loaderArea .loader {
         width: 200px;
@@ -685,12 +694,21 @@ template {
         .loaderArea .loader .fish-1 {
           width: 119px;
           height: 119px; }
+          .loaderArea .loader .fish-1 svg {
+            width: 119px;
+            height: 119px; }
         .loaderArea .loader .fish-2 {
           width: 171px;
           height: 171px; }
+          .loaderArea .loader .fish-2 svg {
+            width: 171px;
+            height: 171px; }
         .loaderArea .loader .hook {
           width: 56px;
-          height: 56px; } }
+          height: 56px; }
+          .loaderArea .loader .hook svg {
+            width: 56px;
+            height: 56px; } }
 
 @media (min-width: 768px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -2373,7 +2391,7 @@ template {
     @media screen and (max-width: 991.9px) {
       .gallery-block .gallery-info {
         max-width: 334px; } }
-    @media screen and (max-width: 991.9px) {
+    @media screen and (max-width: 767.9px) {
       .gallery-block .gallery-info {
         max-width: 100%; } }
     .gallery-block .gallery-info h2 {
