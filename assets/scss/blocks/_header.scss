@@ -194,7 +194,8 @@
 		    		height: 80px;
 		    		img {
 			    		filter: invert(0);
-			    		max-width: 50px;
+			    		//max-width: 50px;
+			    		transform: scale(.6);
 			    	}
 		    	}
 			}

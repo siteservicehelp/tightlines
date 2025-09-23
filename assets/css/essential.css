@@ -1117,7 +1117,7 @@ template {
       height: 80px; }
       .header-wrapper.header-sticky.header-wrapper-2 .logo-block a img {
         filter: invert(0);
-        max-width: 50px; }
+        transform: scale(0.6); }
     .header-wrapper.header-sticky.header-wrapper-open {
       background: transparent; }
       .header-wrapper.header-sticky.header-wrapper-open .logo-block {
@@ -2518,6 +2518,12 @@ template {
 .about-block {
   padding-top: 238px;
   margin: 0 0 100px; }
+  @media screen and (max-width: 1499.9px) {
+    .about-block {
+      padding-top: 198px; } }
+  @media screen and (max-width: 991.9px) {
+    .about-block {
+      margin-bottom: 80px; } }
   .about-block h1 {
     margin-bottom: 60px;
     text-transform: uppercase; }
@@ -2528,10 +2534,18 @@ template {
   .about-block img {
     width: 100%;
     height: auto; }
+  .about-block .our-principles {
+    padding-left: 60px; }
+    @media screen and (max-width: 1499.9px) {
+      .about-block .our-principles {
+        padding-left: 0px; } }
 
 .withus-block {
   text-align: center;
   margin-bottom: 100px; }
+  @media screen and (max-width: 991.9px) {
+    .withus-block {
+      margin-bottom: 80px; } }
   .withus-block h2 {
     margin-bottom: 30px;
     text-transform: uppercase; }
@@ -2539,17 +2553,38 @@ template {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto; }
+    @media screen and (max-width: 1499.9px) {
+      .withus-block p {
+        max-width: 1128px; } }
   .withus-block .line-animation-wrapper {
     width: 100%;
     max-width: 100%;
     overflow: hidden;
     padding: 120px 0 60px;
     position: relative; }
+    @media screen and (max-width: 1499.9px) {
+      .withus-block .line-animation-wrapper {
+        padding: 90px 0; } }
+    @media screen and (max-width: 991.9px) {
+      .withus-block .line-animation-wrapper {
+        padding: 60px 0; } }
+  .withus-block .line-animation-block-wrapper {
+    /*position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 1;*/ }
   .withus-block .line-animation-block {
     /*width: 3840px;*/
     height: 376px;
     position: relative;
     display: flex; }
+    .withus-block .line-animation-block .all-lines {
+      background: url("../../assets/img/line.svg") repeat-x top left;
+      background-size: 100% 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      transition: all .5s linear; }
     .withus-block .line-animation-block .line-element {
       min-width: 50vw;
       height: 100%;
@@ -2583,22 +2618,17 @@ template {
         justify-content: flex-end; }
       .withus-block .line-animation-block .line-element.line-element-1 {
         padding-left: 110px;
-        margin-top: -7px; }
+        margin-top: 10px; }
       .withus-block .line-animation-block .line-element.line-element-2 {
         padding-right: 110px;
-        padding-bottom: 10px; }
+        padding-bottom: 43px; }
       .withus-block .line-animation-block .line-element.line-element-3 {
         padding-left: 110px;
-        margin-top: -7px; }
+        margin-top: -43px; }
       .withus-block .line-animation-block .line-element.line-element-4 {
         padding-right: 110px;
-        padding-bottom: 10px; }
+        padding-bottom: 98px; }
   .withus-block .line-animation-block-image {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    z-index: 0;
-    width: 100%;
     height: 376px;
     display: flex; }
     .withus-block .line-animation-block-image .line-element-img {
@@ -2615,31 +2645,74 @@ template {
         margin-bottom: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+      .withus-block .advantages-block .single-advantage p {
+        margin-bottom: 0px; }
+        @media screen and (max-width: 991.9px) {
+          .withus-block .advantages-block .single-advantage p {
+            margin-bottom: 30px; } }
+    @media screen and (max-width: 991.9px) {
+      .withus-block .advantages-block {
+        margin-bottom: 80px; } }
 
 .team-block {
   position: relative;
   margin-bottom: 100px; }
-  .team-block h2 {
+  @media screen and (max-width: 991.9px) {
+    .team-block {
+      margin-bottom: 80px; } }
+  .team-block .title-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     margin-bottom: 60px; }
-  .team-block .swiper {
+  .team-block h2 {
+    margin: 0;
+    text-transform: uppercase; }
+  .team-block .team-slider-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px; }
+    .team-block .team-slider-nav .team-swiper-button-prev {
+      width: 50px;
+      height: 50px;
+      color: #000;
+      cursor: pointer; }
+    .team-block .team-slider-nav .team-swiper-button-next {
+      width: 50px;
+      height: 50px;
+      color: #000;
+      cursor: pointer; }
+  .team-block .teamSwiper {
     width: 100%;
     height: 834px;
     text-transform: uppercase;
     margin-bottom: 60px; }
-    .team-block .swiper .swiper-slide {
+    @media screen and (max-width: 991.9px) {
+      .team-block .teamSwiper {
+        height: 525px; } }
+    .team-block .teamSwiper .swiper-slide {
       display: flex;
       flex-direction: column; }
-      .team-block .swiper .swiper-slide .text-medium {
+      .team-block .teamSwiper .swiper-slide .text-medium {
         margin-bottom: 10px; }
-      .team-block .swiper .swiper-slide p {
-        margin-bottom: 20px; }
-      .team-block .swiper .swiper-slide img {
+      .team-block .teamSwiper .swiper-slide p {
+        margin-bottom: 20px;
+        color: #989898; }
+      .team-block .teamSwiper .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover; }
-  .team-block a {
-    margin-left: 20px; }
+        object-fit: cover;
+        object-position: center; }
+  .team-block .buttons-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; }
 
 /***********************
         CONTACTS 
