@@ -416,7 +416,6 @@
 		document.addEventListener("DOMContentLoaded", (event) => {
 		gsap.registerPlugin(ScrollTrigger)
 			
-		const slides = gsap.utils.toArray(".all-lines");
 		const tween = gsap.to(".all-lines", {
 		  	ease: "sine.inOut",
 		  	xPercent: -49,
@@ -440,10 +439,10 @@
 			});	
 		};
 
-		if(window.innerWidth >= 576) {
+		if(window.innerWidth > 577) {
 			ScrollTrigger.create({
 				trigger: '#app-line-animation-block',
-				start: 'top 50%',				
+				start: 'top 200',				
 			  	end: '+=1200',
 			  	scrub: true,
 			  	pin: true,

@@ -23,49 +23,54 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
  
 </head>
-<body>
-	<!--<div class="loaderArea">
+<body class="overflow-hidden">
+	<div class="loaderArea">
 		<div class="loader">
 			<span class="fish-1 app-fish-1-animation">
-				<svg width="358" height="358" viewBox="0 0 358 358" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M52.5728 57.4263C20.3317 90.813 2.67389 135.64 3.4839 182.046C4.29392 228.452 23.5054 272.635 56.892 304.876" stroke="#007CF7" stroke-width="5"/>
-					<path d="M45.223 67.3832C45.1432 67.3443 45.139 67.2338 45.1521 67.1293C48.9436 51.1261 62.8259 39.6992 78.5286 38.5571C77.9319 36.6899 77.7817 34.0151 80.1119 31.5324C80.2095 31.4814 80.3165 31.4671 80.4506 31.4913C80.5735 31.5119 80.655 31.6116 80.7209 31.7161C81.2108 33.0735 82.6309 36.4276 85.318 38.7015C92.9336 39.848 100.279 43.9213 100.3 47.3041C100.328 51.0356 92.8581 54.066 84.8946 54.8482C83.1982 56.0574 81.1923 58.1355 79.8177 61.5887C79.7444 61.6979 79.6389 61.7981 79.4741 61.7912C79.3556 61.7817 79.2505 61.7221 79.1593 61.6355C78.4221 60.5333 77.1532 58.2221 78.4651 54.9577C78.2786 54.9471 78.0955 54.9436 77.9128 54.9309C68.5539 54.0947 53.9645 55.6687 45.645 67.179C45.645 67.179 45.445 67.5106 45.223 67.3832Z" fill="white"/>
-					<path d="M50.9209 63.5602C51.0247 63.4687 51.1139 63.4267 51.2407 63.4981C51.3743 63.5731 51.3124 63.7105 51.2772 63.7853C49.0081 68.5345 48.6526 76.7119 56.8024 82.2425C56.8024 82.2425 57.1151 82.4548 57.0248 82.6477C56.9885 82.7248 56.8662 82.7455 56.7603 82.7626C56.4405 82.8018 54.9253 82.5843 54.4385 82.5609C53.1883 82.5038 51.3579 82.6304 50.3086 83.7499C49.5474 84.5647 49.1545 85.7654 49.2642 87.27C49.4694 88.617 49.8087 90.0569 50.3527 91.4458C50.3884 91.5549 50.4268 91.732 50.2891 91.8122C50.1621 91.8888 50.0425 91.834 49.9451 91.7589C44.6903 87.731 39.594 73.5644 50.9209 63.5602Z" fill="white"/>
-				</svg>
+				<svg class="icon" width="358" height="358">
+			        <use xlink:href="assets/img/sprites/sprites.svg#icon-fish-1"></use>
+			    </svg>
 			</span>
 			<span class="fish-2 app-fish-2-animation">
-				<svg width="513" height="513" viewBox="0 0 513 513" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M268.051 504.657C300.837 502.938 332.962 494.777 362.594 480.642C392.226 466.507 418.783 446.674 440.75 422.276C462.717 397.877 479.663 369.39 490.621 338.443C501.579 307.495 506.334 274.692 504.614 241.906C502.895 209.121 494.734 176.995 480.599 147.364C466.464 117.732 446.631 91.1743 422.233 69.2074C397.834 47.2405 369.348 30.2944 338.4 19.3366C307.452 8.37878 274.649 3.62389 241.863 5.3434" stroke="#007CF7" stroke-width="5"/>
-					<path d="M277.997 505.725C277.998 505.814 277.901 505.867 277.802 505.902C261.796 509.684 245.36 502.394 237.303 488.867C235.901 490.238 233.577 491.571 230.313 490.6C230.224 490.535 230.163 490.446 230.125 490.315C230.088 490.196 230.141 490.079 230.205 489.973C231.199 488.927 233.561 486.154 234.389 482.733C232.002 475.411 232.352 467.019 235.366 465.484C238.69 463.788 244.746 469.108 249.014 475.876C250.855 476.851 253.612 477.713 257.315 477.395C257.445 477.411 257.582 477.461 257.65 477.611C257.694 477.721 257.688 477.842 257.652 477.962C256.997 479.115 255.499 481.285 251.993 481.575C252.067 481.747 252.146 481.912 252.216 482.081C255.663 490.822 263.607 503.16 277.625 505.44C277.625 505.44 278.011 505.47 277.997 505.725Z" fill="white"/>
-					<path d="M272.026 502.345C271.898 502.293 271.82 502.232 271.827 502.086C271.834 501.933 271.985 501.927 272.068 501.925C277.33 501.826 284.8 498.479 286.092 488.715C286.092 488.715 286.142 488.34 286.355 488.335C286.44 488.333 286.513 488.433 286.576 488.52C286.754 488.788 287.239 490.24 287.436 490.686C287.945 491.829 288.879 493.408 290.35 493.845C291.419 494.16 292.669 493.973 293.965 493.201C295.077 492.414 296.212 491.466 297.21 490.357C297.291 490.276 297.433 490.162 297.566 490.25C297.691 490.329 297.696 490.46 297.672 490.581C296.426 497.084 286.045 507.988 272.026 502.345Z" fill="white"/>
-				</svg>
+				<svg class="icon" width="513" height="513">
+			        <use xlink:href="assets/img/sprites/sprites.svg#icon-fish-2"></use>
+			    </svg>
 			</span>
 			<span class="hook">
-				<svg width="169" height="169" viewBox="0 0 169 169" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M105.051 38C99.0139 38 94.1022 42.9117 94.1022 48.9489C94.1022 53.7068 97.1537 57.7633 101.401 59.2701V103.511C101.401 114.881 92.1513 124.131 80.781 124.131C69.4108 124.131 60.1606 114.881 60.1606 103.511H72.9343L52.8613 83.438V103.511C52.8613 118.906 65.3861 131.431 80.781 131.431C96.1759 131.431 108.701 118.906 108.701 103.511V59.2701C112.949 57.7633 116 53.7068 116 48.9489C116 42.9117 111.088 38 105.051 38ZM105.051 52.5985C103.039 52.5985 101.401 50.9613 101.401 48.9489C101.401 46.9365 103.039 45.2993 105.051 45.2993C107.064 45.2993 108.701 46.9365 108.701 48.9489C108.701 50.9613 107.064 52.5985 105.051 52.5985Z" fill="white"/>
-				</svg>
+				<svg class="icon" width="169" height="169">
+			        <use xlink:href="assets/img/sprites/sprites.svg#icon-hook"></use>
+			    </svg>
 			</span>
 		</div>
-	</div>-->
+	</div>
 
-	<header class="header-wrapper-2">
+	<header class="header-wrapper header-wrapper-2">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-12">
 					<div class="header-block">
 						<div class="logo-block">
-							<a href="#"><img src="assets/img/tightlines.svg" alt="logo"></a>
+							<a href="/">
+								<img src="assets/img/tightlines.svg" alt="logo">
+							</a>
 						</div>
 						<div class="menu-block">
-							<button class="text-bold">Меню<img src="assets/img/menu2.svg" alt="logo"></button>
-						</div>
+							<button class="app-toggle-button toggle-button">
+								Меню
+								<span class="toggle-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+							</button>
+						</div>						
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>		
 	</header>
 
-	<!--<div class="menu-wrapper">
+	<div class="menu-wrapper">
 		<div class="container h-100">
 			<div class="row h-100 justify-content-between">
 				<div class="col-xl-5 col-lg-3 col-12 d-none d-lg-block"></div>
@@ -95,17 +100,23 @@
 					<ul class="social-links">
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/social/yt.svg" alt="">
+								<svg class="icon" width="25" height="18">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-youtube"></use>
+							    </svg>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/social/tg.svg" alt="">
+								<svg class="icon" width="26" height="20">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-telegram"></use>
+							    </svg>
 							</a>
 						</li>
 						<li>
 							<a href="#" target="_blank">
-								<img src="assets/img/social/in.svg" alt="">
+								<svg class="icon" width="31" height="30">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-instagram"></use>
+							    </svg>
 							</a>
 						</li>
 					</ul>
@@ -117,33 +128,33 @@
 				</div>
 			</div>
 		</div>	
-	</div>-->
+	</div>
 
 	<main>
 		<div class="contact-block">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-12">
+					<div class="col-12">
 						<h1>Контакты</h1>
 					</div>
 				</div>
 				<div class="row align-content-stretch">
-					<div class="col-lg-3">
+					<div class="col-xl-3 col-lg-6">
 						<div class="contacts-information">
 							<h3 class="text-uppercase">Контактная информация</h3>
 							<div class="information-block">
-								<a href="Pochta@gmail.com">Pochta@gmail.com</a>
-								<a href="tel:+70000000000">+7 (000) 000-00-00</a>
+								<a href="mailto:Pochta@gmail.com" target="_blank">Pochta@gmail.com</a>
+								<a href="tel:+70000000000" target="_blank">+7 (000) 000-00-00</a>
 							</div>
-							<h3>Подписывайтесь</h3>
+							<h3 class="text-uppercase">Подписывайтесь</h3>
 							<div class="subscribe-block">
-								<a href="#">Youtube</a>
-								<a href="#">Instagram</a>
-								<a href="#">Telegram</a>
+								<a href="#" target="_blank">Youtube</a>
+								<a href="#" target="_blank">Instagram</a>
+								<a href="#" target="_blank">Telegram</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-xl-4 col-lg-6">
 						<div class="subscribe-form-wrapper">
 							<h3 class="text-uppercase">Свяжитесь с нами</h3>
 							<form action="">
@@ -178,7 +189,7 @@
 							</form>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-xl-5 col-12">
 						<img src="assets/img/fishermen.png" class="w-100" alt="">
 					</div>
 				</div>
@@ -187,48 +198,117 @@
 	</main>
 
 	<footer class="footer-wrapper">
-		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="footer-widgets">
+						<div class="footer-menu">
+							<ul>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Фильмы</a></li>
+								<li><a href="#">Экспедиции</a></li>
+								<li><a href="#">Галерея</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="social-links">
+							<a href="#" target="_blank">
+								<svg class="icon" width="25" height="18">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-youtube"></use>
+							    </svg>
+							</a>						
+							<a href="#" target="_blank" data-bs-toggle="modal" data-bs-target="#tg">
+								<svg class="icon" width="26" height="20">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-telegram"></use>
+							    </svg>
+							</a>					
+							<a href="#" target="_blank">
+								<svg class="icon" width="31" height="30">
+							        <use xlink:href="assets/img/sprites/sprites.svg#icon-instagram"></use>
+							    </svg>
+							</a>						
+						</div>
+						<div class="copyright-block">
+							<span>©  «компания», 2025</span>
+							<a href="#" download="" target="_blank">Политика конфиденциальности</a>
+						</div>
+						<div class="footer-logo">
+							<span>TIGHT LINES</span>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
 	</footer>
 
-	<!--<a href="/" class="scrollup"></a>-->
-
-	<!--<div class="modal fade" id="callback" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="orderLabel" aria-hidden="true">
-	  	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+	<div class="modal fade callback-modal" id="callback" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered" role="document">
 	    	<div class="modal-content">
-	      		<div class="modal-header">
-	        		<h4 class="modal-title" id="orderLabel">Заказать звонок</h4>
-	        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          			<i class="fas fa-times"></i>
-	        		</button>
-	      		</div>
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      		<div class="modal-body">
-	        		<form id="modal" class="form-vertical" role="form" method="POST" data-type="message">
-						<div class="form-group">
-							<input class="form-control name" type="text" maxlength="100" placeholder="Имя" name="name" value="" required>
+	      			<h3>Свяжитесь с нами</h3>
+	      			<p>Lorem ipsum dolor sit amet consectetur. Ridiculus vel vitae.Lorem ipsum dolor sit amet consectetur. Ridiculus vel vitae.</p>	        		
+	        		<form action="">						
+						<div class="form-group form-floating">
+							<input type="text" name="your-name2" id="your-name2" class="form-control" placeholder="Ваше имя *" required="">
+							<label for="your-name2">Ваше имя *</label>
 						</div>
-						<div class="form-group">
-							<input class="form-control phone" type="text" placeholder="Телефон" maxlength="100" name="phone" value="" required>
+						<div class="form-group form-floating">
+							<input type="tel" name="your-tel2" id="your-tel2" class="form-control" placeholder="Введите номер телефона">
+							<label for="your-tel2">Введите номер телефона</label>
 						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Почтовый ящик" name="email" value="" required>
+						<div class="form-group form-floating">
+							<input type="email" name="your-email2" id="your-email2" class="form-control" placeholder="Введите вашу почту*" required="">
+							<label for="your-email2">Введите вашу почту*</label>
 						</div>
+						<div class="form-group form-floating">
+							<input type="text" name="your-comment2" id="your-comment2" class="form-control" placeholder="Комментарий">
+							<label for="your-comment2">Комментарий</label>
+						</div>						
 						<div class="form-group">
-							<textarea class="form-control message" wrap="virtual" name="message" placeholder="Сообщение"></textarea>
+							<div class="form-check mb-0">
+							  	<input class="form-check-input" type="checkbox" value="" id="checkAgree" checked required="">
+							  	<label class="form-check-label" for="checkAgree">
+							    	Я соглашаюсь с условиями <a href="#" download="" target="_blank">пользовательского соглашения</a> и <a href="#" download="" target="_blank">политикой обработки персональных данных</a>
+							  	</label>
+							</div>
 						</div>
-						<div class="form-check">
-							<div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" required id="agreement">
-                                <label class="custom-control-label checkbox-text" for="agreement">Я согласен с использованием моих персональных данных для обработки данного обращения.</label>
-                            </div>
-					    </div>
-					    <div class="form-group text-center">         
-						    <button type="submit" class="btn btn-secondary btn-lg">Заказать</button>
-					    </div>				
-				    </form> 
+						<div class="form-group mb-0">
+							<button class="btn btn-primary" type="submit"><span>Отправить</span></button>
+							<!--<input type="submit" name="submit-btn" id="submit-btn" class="btn btn-primary" placeholder="Забронировать" value="Забронировать">-->
+						</div>
+					</form>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade video-modal" id="video-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered modal-fullscreen" role="document">
+	    	<div class="modal-content">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      		<div class="modal-body">
+	        		<div class="text-center youtube-frame"></div>
 	      		</div>	      		
 	    	</div>
 	  	</div>
-	</div>-->
+	</div>
+
+	<div class="modal fade tg-modal" id="tg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-dialog-centered" role="document">
+	    	<div class="modal-content">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      		<div class="modal-body">
+	      			<h3>Следите за новостями в нашем  Телеграм канале</h3>
+	      			<div class="img-wrapper">
+	      				<img src="assets/img/logomodal.svg" alt="">
+	      			</div>	        		
+	        		<p>TIGHT LINES | Морская рыбалка</p>
+	        		<a href="#" class="btn btn-white"><span>Подписаться</span></a>
+	      		</div>	      		
+	    	</div>
+	  	</div>
+	</div>
     
     <!-- Подключение скриптов -->
     
