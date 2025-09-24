@@ -1109,6 +1109,9 @@ template {
       max-width: 100%;
       width: 209px;
       height: auto; }
+      @media screen and (max-width: 1500px) {
+        .header-wrapper.header-wrapper-3 .header-block .logo-block a img {
+          width: 128px; } }
   .header-wrapper.header-sticky {
     padding: 20px 0;
     background: #fff; }
@@ -3007,145 +3010,239 @@ template {
 /***********************
         MOVIES 
 ***********************/
-.header-wrapper {
-  padding: 33px 0 0px; }
-
-.single-movie {
-  background: #000;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  position: relative;
-  display: block;
-  width: 100%;
-  float: left;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  cursor: pointer; }
-  .single-movie .movie-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 640px; }
-    .single-movie .movie-info .movie-title {
-      position: absolute;
-      top: 40px;
-      right: 40px;
-      z-index: 3;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 100%;
-      text-transform: uppercase;
-      color: white;
-      transition: all 0.5s;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s; }
-      @media screen and (max-width: 767.9px) {
-        .single-movie .movie-info .movie-title {
-          top: 10px;
-          right: 10px;
-          font-size: 16px; } }
-    .single-movie .movie-info .movie-year {
-      position: absolute;
-      bottom: 40px;
-      right: 40px;
-      z-index: 3;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 100%;
-      text-transform: uppercase;
-      color: white;
-      transition: all 0.5s;
-      -webkit-transition: all 0.5s;
-      -moz-transition: all 0.5s; }
-      @media screen and (max-width: 767.9px) {
-        .single-movie .movie-info .movie-year {
-          bottom: 10px;
-          right: 10px;
-          font-size: 16px; } }
-  .single-movie .cover-wrapper {
-    position: relative; }
-    .single-movie .cover-wrapper:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      background: rgba(0, 0, 0, 0.3);
-      pointer-events: none;
-      display: block;
-      width: 100%;
-      height: 100%; }
-    .single-movie .cover-wrapper img {
-      width: 100%;
-      height: 640px;
-      object-position: center;
-      object-fit: cover;
-      position: relative;
-      z-index: 1;
-      display: block;
-      transition: all 0.5s; }
-  .single-movie .play-video-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    opacity: 1;
-    mix-blend-mode: Exclusion;
-    background: #037CED;
-    color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: fixed;
-    z-index: 555;
-    transition: all .25s linear;
-    -webkit-transition: all .25s linear;
-    -moz-transition: all .25s linear;
-    cursor: pointer; }
-    @media screen and (max-width: 767.9px) {
-      .single-movie .play-video-btn {
-        width: 75px;
-        height: 75px;
-        font-size: 10px; } }
-
 .our-films-block {
   padding-top: 180px;
   padding-bottom: 200px;
   background: #000;
-  background-image: url("../img/bglines.svg");
+  background-image: url("../img/bglines2.svg");
   background-repeat: no-repeat;
-  background-position: center 16px;
-  background-size: 100% calc(100% - 112px); }
-  .our-films-block .play-video-btn {
-    display: none; }
+  background-position: top 16px center;
+  background-size: 100% 100%; }
+  @media screen and (max-width: 1700px) {
+    .our-films-block {
+      background-image: url("../img/bglines2.svg");
+      background-repeat: no-repeat;
+      background-position: top 0px center;
+      background-size: 115% 100%; } }
+  @media screen and (max-width: 1500px) {
+    .our-films-block {
+      background-image: url("../img/bglines2.svg");
+      background-repeat: no-repeat;
+      background-position: top 50px center;
+      background-size: 106% 100%; } }
+  @media screen and (max-width: 1199.9px) {
+    .our-films-block {
+      padding-top: 134px;
+      padding-bottom: 160px;
+      background-image: url("../img/bglines2.svg");
+      background-repeat: no-repeat;
+      background-position: top 15px center;
+      background-size: 110% 100%; } }
+  @media screen and (max-width: 991.9px) {
+    .our-films-block {
+      background-image: url("../img/bglines2.svg");
+      background-repeat: no-repeat;
+      background-position: top 80px center;
+      background-size: auto 100%; } }
+  @media screen and (max-width: 575.9px) {
+    .our-films-block {
+      padding-top: 184px;
+      padding-bottom: 100px; } }
   .our-films-block h1 {
     color: #fff;
     text-align: center;
     display: inline-block;
     text-transform: uppercase;
     margin: 0 0 50px -300px; }
+    @media screen and (max-width: 991.9px) {
+      .our-films-block h1 {
+        margin: 0 0 50px -300px;
+        font-size: 80px; } }
+    @media screen and (max-width: 767.9px) {
+      .our-films-block h1 {
+        margin: 0 0 25px -200px;
+        font-size: 54px; } }
     .our-films-block h1 span {
       display: block;
       padding-left: 525px; }
-  .our-films-block .single-movie:nth-child(2) {
-    margin-top: 200px;
-    width: 56.44%;
-    height: 440px; }
-  .our-films-block .single-movie:nth-child(3) {
-    margin-top: 20px;
-    width: 56.44%;
-    margin-left: 43.56%;
-    height: 440px;
+      @media screen and (max-width: 767.9px) {
+        .our-films-block h1 span {
+          padding-left: 300px; } }
+  .our-films-block .all-movies {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap; }
+  .our-films-block .single-movie {
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 789px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    cursor: pointer;
     margin-bottom: 200px; }
+    @media screen and (max-width: 1500px) {
+      .our-films-block .single-movie {
+        height: 687px;
+        margin-bottom: 100px; } }
+    @media screen and (max-width: 1199.9px) {
+      .our-films-block .single-movie {
+        height: 475px;
+        margin-bottom: 60px; } }
+    @media screen and (max-width: 575.9px) {
+      .our-films-block .single-movie {
+        height: 179px;
+        margin-bottom: 70px; } }
+    .our-films-block .single-movie .movie-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      height: 100%; }
+      .our-films-block .single-movie .movie-info .movie-title {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 3;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: white;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        text-align: right; }
+        @media screen and (max-width: 767.9px) {
+          .our-films-block .single-movie .movie-info .movie-title {
+            top: 10px;
+            right: 10px;
+            font-size: 16px; } }
+      .our-films-block .single-movie .movie-info .movie-year {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        z-index: 3;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: white;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s; }
+        @media screen and (max-width: 767.9px) {
+          .our-films-block .single-movie .movie-info .movie-year {
+            bottom: 10px;
+            right: 10px;
+            font-size: 16px; } }
+    .our-films-block .single-movie .cover-wrapper {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .our-films-block .single-movie .cover-wrapper:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.6);
+        pointer-events: none;
+        display: block;
+        width: 100%;
+        height: 100%; }
+      .our-films-block .single-movie .cover-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+        display: block;
+        transition: all 0.5s; }
+    .our-films-block .single-movie .play-video-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      opacity: 1;
+      mix-blend-mode: Exclusion;
+      background: #037CED;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: fixed;
+      z-index: 555;
+      opacity: 0;
+      pointer-events: none;
+      transition: all .25s linear;
+      -webkit-transition: all .25s linear;
+      -moz-transition: all .25s linear;
+      cursor: pointer; }
+      @media screen and (max-width: 767.9px) {
+        .our-films-block .single-movie .play-video-btn {
+          width: 75px;
+          height: 75px;
+          font-size: 10px; } }
+    .our-films-block .single-movie:hover .play-video-btn {
+      opacity: 1;
+      pointer-events: none; }
+    .our-films-block .single-movie:nth-child(2) {
+      width: 56%;
+      height: 440px;
+      margin-bottom: 20px; }
+      @media screen and (max-width: 1500px) {
+        .our-films-block .single-movie:nth-child(2) {
+          height: 397px;
+          width: 66%; } }
+      @media screen and (max-width: 1199.9px) {
+        .our-films-block .single-movie:nth-child(2) {
+          height: 309px;
+          width: 75%; } }
+      @media screen and (max-width: 575.9px) {
+        .our-films-block .single-movie:nth-child(2) {
+          height: 129px;
+          width: 83%; } }
+    .our-films-block .single-movie:nth-child(3) {
+      width: 56%;
+      margin-left: 44%;
+      height: 440px;
+      margin-bottom: 200px; }
+      @media screen and (max-width: 1500px) {
+        .our-films-block .single-movie:nth-child(3) {
+          height: 397px;
+          margin-bottom: 100px;
+          width: 66%;
+          margin-left: 34%; } }
+      @media screen and (max-width: 1199.9px) {
+        .our-films-block .single-movie:nth-child(3) {
+          height: 309px;
+          margin-bottom: 60px;
+          width: 75%;
+          margin-left: 25%; } }
+      @media screen and (max-width: 575.9px) {
+        .our-films-block .single-movie:nth-child(3) {
+          height: 129px;
+          margin-bottom: 70px;
+          width: 83%;
+          margin-left: 17%; } }
+    .our-films-block .single-movie:last-child {
+      margin-bottom: 0; }
 
 /***********************
         EXPEDITIONS 
