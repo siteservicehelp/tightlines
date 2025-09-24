@@ -716,6 +716,9 @@ template {
 @media (min-width: 960px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 940px; } }
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1140px; } }
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1360px; } }
@@ -2524,16 +2527,31 @@ template {
   @media screen and (max-width: 991.9px) {
     .about-block {
       margin-bottom: 80px; } }
+  @media screen and (max-width: 575.9px) {
+    .about-block {
+      padding-top: 180px;
+      margin-bottom: 80px; } }
   .about-block h1 {
     margin-bottom: 60px;
     text-transform: uppercase; }
+    @media screen and (max-width: 575.9px) {
+      .about-block h1 {
+        margin-bottom: 40px; } }
   .about-block p {
     margin-bottom: 40px; }
     .about-block p.text-semibold {
       margin-bottom: 20px; }
+    @media screen and (max-width: 575.9px) {
+      .about-block p {
+        margin-bottom: 30px; }
+        .about-block p.text-semibold {
+          margin-bottom: 20px; } }
   .about-block img {
     width: 100%;
     height: auto; }
+    @media screen and (max-width: 575.9px) {
+      .about-block img {
+        margin-top: 40px; } }
   .about-block .our-principles {
     padding-left: 60px; }
     @media screen and (max-width: 1499.9px) {
@@ -2549,6 +2567,9 @@ template {
   .withus-block h2 {
     margin-bottom: 30px;
     text-transform: uppercase; }
+    @media screen and (max-width: 575.9px) {
+      .withus-block h2 {
+        margin-bottom: 20px; } }
   .withus-block p {
     max-width: 1200px;
     margin-left: auto;
@@ -2556,6 +2577,9 @@ template {
     @media screen and (max-width: 1499.9px) {
       .withus-block p {
         max-width: 1128px; } }
+    @media screen and (max-width: 1199.9px) {
+      .withus-block p {
+        max-width: 100%; } }
   .withus-block .line-animation-wrapper {
     width: 100%;
     max-width: 100%;
@@ -2568,6 +2592,9 @@ template {
     @media screen and (max-width: 991.9px) {
       .withus-block .line-animation-wrapper {
         padding: 60px 0; } }
+    @media screen and (max-width: 575.9px) {
+      .withus-block .line-animation-wrapper {
+        padding: 95px 0 55px; } }
   .withus-block .line-animation-block-wrapper {
     /*position: absolute;
     top: 120px;
@@ -2575,36 +2602,62 @@ template {
     z-index: 1;*/ }
   .withus-block .line-animation-block {
     /*width: 3840px;*/
-    height: 376px;
+    height: 452px;
     position: relative;
     display: flex; }
+    @media screen and (min-width: 1921px) {
+      .withus-block .line-animation-block {
+        height: 452px; } }
     .withus-block .line-animation-block .all-lines {
-      background: url("../../assets/img/line.svg") repeat-x top left;
-      background-size: 100% 100%;
+      background: url("../../assets/img/line3.svg") repeat-x top left;
+      background-size: 100% auto;
       height: 100%;
       position: relative;
       display: flex;
       transition: all .5s linear; }
+      @media screen and (min-width: 576px) {
+        .withus-block .line-animation-block .all-lines {
+          background: url("../../assets/img/line2.svg") repeat-x top left;
+          background-size: 100% auto; } }
+      @media screen and (min-width: 1200px) {
+        .withus-block .line-animation-block .all-lines {
+          background: url("../../assets/img/line.svg") repeat-x top left;
+          background-size: 100% auto; } }
     .withus-block .line-animation-block .line-element {
-      min-width: 50vw;
+      min-width: 100vw;
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center; }
+      @media screen and (min-width: 576px) {
+        .withus-block .line-animation-block .line-element {
+          min-width: 50vw; } }
       .withus-block .line-animation-block .line-element .number-title {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 125%;
         text-align: center;
         margin-bottom: 0px;
         display: block; }
+        @media screen and (min-width: 576px) {
+          .withus-block .line-animation-block .line-element .number-title {
+            font-size: 40px; } }
       .withus-block .line-animation-block .line-element .el-text {
         font-weight: 300;
-        font-size: 20px;
+        font-size: 15px;
         line-height: 125%;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         display: block; }
+        @media screen and (min-width: 480px) {
+          .withus-block .line-animation-block .line-element .el-text {
+            font-size: 17px; } }
+        @media screen and (min-width: 576px) {
+          .withus-block .line-animation-block .line-element .el-text {
+            font-size: 20px; } }
+        @media screen and (min-width: 1200px) {
+          .withus-block .line-animation-block .line-element .el-text {
+            margin-bottom: 10px; } }
       .withus-block .line-animation-block .line-element:after {
         content: '';
         width: 24px;
@@ -2617,26 +2670,176 @@ template {
       .withus-block .line-animation-block .line-element.line-element-bottom {
         justify-content: flex-end; }
       .withus-block .line-animation-block .line-element.line-element-1 {
-        padding-left: 110px;
-        margin-top: 10px; }
+        padding-left: 35px;
+        margin-top: -26px; }
+        @media screen and (min-width: 375px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            padding-left: 50px;
+            margin-top: -19px; } }
+        @media screen and (min-width: 480px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            padding-left: 50px;
+            margin-top: -13px; } }
+        @media screen and (min-width: 576px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -65px; } }
+        @media screen and (min-width: 768px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            padding-left: 60px;
+            margin-top: -53px; } }
+        @media screen and (min-width: 1024px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -33px; } }
+        @media screen and (min-width: 1200px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            padding-left: 85px;
+            margin-top: -53px; } }
+        @media screen and (min-width: 1300px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            padding-left: 110px;
+            margin-top: -49px; } }
+        @media screen and (min-width: 1400px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -45px; } }
+        @media screen and (min-width: 1500px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -43px; } }
+        @media screen and (min-width: 1600px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -38px; } }
+        @media screen and (min-width: 1700px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -35px; } }
+        @media screen and (min-width: 1800px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -30px; } }
+        @media screen and (min-width: 1921px) {
+          .withus-block .line-animation-block .line-element.line-element-1 {
+            margin-top: -23px; } }
       .withus-block .line-animation-block .line-element.line-element-2 {
-        padding-right: 110px;
-        padding-bottom: 43px; }
+        padding-right: 25px;
+        padding-bottom: 142px;
+        position: relative;
+        bottom: 0; }
+        @media screen and (min-width: 375px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-right: 40px;
+            padding-bottom: 88px;
+            position: relative;
+            bottom: 0; } }
+        @media screen and (min-width: 480px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-right: 40px;
+            padding-bottom: 0px;
+            position: relative;
+            bottom: -8px; } }
+        @media screen and (min-width: 576px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 167px;
+            bottom: auto; } }
+        @media screen and (min-width: 768px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-right: 50px;
+            padding-bottom: 100px; } }
+        @media screen and (min-width: 1024px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 12px; } }
+        @media screen and (min-width: 1200px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-right: 50px;
+            padding-bottom: 153px; } }
+        @media screen and (min-width: 1300px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-right: 110px;
+            padding-bottom: 137px; } }
+        @media screen and (min-width: 1400px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 112px; } }
+        @media screen and (min-width: 1500px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 100px; } }
+        @media screen and (min-width: 1600px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 83px; } }
+        @media screen and (min-width: 1700px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 65px; } }
+        @media screen and (min-width: 1800px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 48px; } }
+        @media screen and (min-width: 1921px) {
+          .withus-block .line-animation-block .line-element.line-element-2 {
+            padding-bottom: 83px; } }
       .withus-block .line-animation-block .line-element.line-element-3 {
-        padding-left: 110px;
-        margin-top: -43px; }
+        padding-left: 35px;
+        margin-top: -88px; }
+        @media screen and (min-width: 375px) {
+          .withus-block .line-animation-block .line-element.line-element-3 {
+            padding-left: 50px;
+            margin-top: -90px; } }
+        @media screen and (min-width: 480px) {
+          .withus-block .line-animation-block .line-element.line-element-3 {
+            margin-top: -105px; } }
+        @media screen and (min-width: 576px) {
+          .withus-block .line-animation-block .line-element.line-element-3 {
+            padding-left: 0; } }
+        @media screen and (min-width: 768px) {
+          .withus-block .line-animation-block .line-element.line-element-3 {
+            padding-left: 60px;
+            margin-top: -105px; } }
+        @media screen and (min-width: 1200px) {
+          .withus-block .line-animation-block .line-element.line-element-3 {
+            padding-left: 85px;
+            margin-top: -95px; } }
+        @media screen and (min-width: 1300px) {
+          .withus-block .line-animation-block .line-element.line-element-3 {
+            padding-left: 110px;
+            margin-top: -95px; } }
       .withus-block .line-animation-block .line-element.line-element-4 {
-        padding-right: 110px;
-        padding-bottom: 98px; }
-  .withus-block .line-animation-block-image {
-    height: 376px;
-    display: flex; }
-    .withus-block .line-animation-block-image .line-element-img {
-      min-width: 200vw;
-      height: 100%; }
-      .withus-block .line-animation-block-image .line-element-img img {
-        width: 100%;
-        height: 100%; }
+        padding-right: 35px;
+        padding-bottom: 202px; }
+        @media screen and (min-width: 375px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 203px; } }
+        @media screen and (min-width: 480px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 85px; } }
+        @media screen and (min-width: 576px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 205px; } }
+        @media screen and (min-width: 768px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-right: 60px;
+            padding-bottom: 155px; } }
+        @media screen and (min-width: 1024px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 85px; } }
+        @media screen and (min-width: 1200px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-right: 65px;
+            padding-bottom: 197px; } }
+        @media screen and (min-width: 1300px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-right: 110px;
+            padding-bottom: 183px; } }
+        @media screen and (min-width: 1400px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 164px; } }
+        @media screen and (min-width: 1500px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 155px; } }
+        @media screen and (min-width: 1600px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 141px; } }
+        @media screen and (min-width: 1700px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 126px; } }
+        @media screen and (min-width: 1800px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 113px; } }
+        @media screen and (min-width: 1921px) {
+          .withus-block .line-animation-block .line-element.line-element-4 {
+            padding-bottom: 155px; } }
   .withus-block .advantages-block {
     margin-bottom: 100px; }
     .withus-block .advantages-block .single-advantage {
@@ -2645,14 +2848,20 @@ template {
         margin-bottom: 10px;
         padding-bottom: 10px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+        @media screen and (max-width: 767.9px) {
+          .withus-block .advantages-block .single-advantage h3 {
+            font-size: 26px; } }
       .withus-block .advantages-block .single-advantage p {
         margin-bottom: 0px; }
-        @media screen and (max-width: 991.9px) {
+        @media screen and (max-width: 1199.9px) {
           .withus-block .advantages-block .single-advantage p {
             margin-bottom: 30px; } }
     @media screen and (max-width: 991.9px) {
       .withus-block .advantages-block {
         margin-bottom: 80px; } }
+    @media screen and (max-width: 575.9px) {
+      .withus-block .advantages-block {
+        margin-bottom: 35px; } }
 
 .team-block {
   position: relative;
@@ -2660,6 +2869,9 @@ template {
   @media screen and (max-width: 991.9px) {
     .team-block {
       margin-bottom: 80px; } }
+  @media screen and (max-width: 575.9px) {
+    .team-block {
+      margin-bottom: 70px; } }
   .team-block .title-wrapper {
     width: 100%;
     display: flex;
@@ -2667,9 +2879,16 @@ template {
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 60px; }
+    @media screen and (max-width: 575.9px) {
+      .team-block .title-wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 40px; } }
   .team-block h2 {
     margin: 0;
     text-transform: uppercase; }
+    @media screen and (max-width: 575.9px) {
+      .team-block h2 {
+        width: 100%; } }
   .team-block .team-slider-nav {
     display: flex;
     align-items: center;
@@ -2704,15 +2923,24 @@ template {
       .team-block .teamSwiper .swiper-slide img {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 743px;
         object-fit: cover;
         object-position: center; }
+        @media screen and (max-width: 991.9px) {
+          .team-block .teamSwiper .swiper-slide img {
+            height: 434px; } }
   .team-block .buttons-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px; }
+    @media screen and (max-width: 991.9px) {
+      .team-block .buttons-wrapper {
+        flex-direction: row-reverse; } }
+    @media screen and (max-width: 575.9px) {
+      .team-block .buttons-wrapper {
+        flex-direction: column-reverse; } }
 
 /***********************
         CONTACTS 
