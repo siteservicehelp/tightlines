@@ -419,7 +419,8 @@
 		const tween = gsap.to(".all-lines", {
 		  	ease: "sine.inOut",
 		  	xPercent: -49,
-		  	//delay: 2
+		  	//x: () => -(document.querySelector(".horizontal-container").offsetWidth - window.innerWidth),
+    		//ease: "none"
 		});
 
 		const tweenMobile = gsap.to(".all-lines", {
@@ -428,27 +429,43 @@
 		  	//delay: 2
 		});
 
-		if(window.innerWidth < 576) {
-	        ScrollTrigger.create({
-				trigger: '#app-line-animation-block',
-				start: 'top 250',				
-			  	end: '+=1000',
-			  	scrub: true,
-			  	pin: true,
-			  	animation: tweenMobile
-			});	
-		};
+		ScrollTrigger.matchMedia({
+		  	// large
+		  	"(min-width: 576px)": function () {
+		  		gsap.to(".all-lines", {
+		  			ease: "sine.inOut",
+			      	xPercent: -49,
+			      	scrollTrigger: {
+			        	trigger: '#app-line-animation-block',
+						start: 'top 200',				
+					  	end: '+=1200',
+					  	scrub: 0.5,
+					  	pin: true,
+					  	toggleActions: "play pause reverse reset",
+					  	//animation: tween,
+					  	markers: true
+			      	},
+			    });		    	
+		  	},
 
-		if(window.innerWidth > 577) {
-			ScrollTrigger.create({
-				trigger: '#app-line-animation-block',
-				start: 'top 200',				
-			  	end: '+=1200',
-			  	scrub: true,
-			  	pin: true,
-			  	animation: tween
-			});	
-		};	
+		  	// small
+		  	"(max-width: 575px)": function () {
+		  		gsap.to(".all-lines", {
+		  			ease: "sine.inOut",
+			      	xPercent: -74,
+			      	scrollTrigger: {
+			        	trigger: '#app-line-animation-block',
+						start: 'top 250',				
+					  	end: '+=1000',
+					  	scrub: 0.5,
+					  	pin: true,
+					  	toggleActions: "play pause reverse reset",
+					  	//animation: tweenMobile,
+					  	markers: true
+			      	},
+			    });			    	
+		  	},
+		});
 	});
 	</script>
 
