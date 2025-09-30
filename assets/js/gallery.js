@@ -46,24 +46,6 @@ window.addEventListener('load', () => {
         gallerySwiper.classList.remove('hidden-gallery');
     });  
 
-
-    /*var swiper = new Swiper(".gallerySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-            nextEl: ".gallery-swiper-button-next",
-            prevEl: ".gallery-swiper-button-prev",
-        },
-        breakpoints: {
-            576: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            }
-        },
-    });*/
-
-
     var swiper = new Swiper(".thumbsSwiper", {
         loop: true,
         spaceBetween: 20,
