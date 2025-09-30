@@ -135,7 +135,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-start">
-						<h1>Галерея</h1>
+						<div class="d-flex align-items-center justify-content-between flex-wrap gap-4 mb-5">
+							<h1>Галерея</h1>
+							<div class="gallery-slider-nav app-gallery-slider-nav hidden-gallery-nav">
+								<div class="gallery-swiper-button-prev">
+									<svg class="icon" width="50" height="50">
+								        <use xlink:href="assets/img/sprites/sprites.svg#icon-prev"></use>
+								    </svg>
+								</div>
+						    	<div class="gallery-swiper-button-next">
+						    		<svg class="icon" width="50" height="50">
+								        <use xlink:href="assets/img/sprites/sprites.svg#icon-next"></use>
+								    </svg>
+						    	</div>
+							</div>	
+						</div>
+						
 					</div>		
 					<div class="col-lg-12">					
 						<div class="gallery-container" id="no-click">
@@ -162,26 +177,80 @@
 						  	<div class="click-1-btn show"></div>
 						  	<div class="click-2-btn"></div>
 						  	<div class="click-3-btn"></div>
+						  	<div class="click-4-btn"></div>
 						</div>
 
-						<!--<div class="switch" id="controls">
-						  	<button class="switch-button" id="resetBtn">
-						    	<span class="indicator-dot"></span>
-						    	RESET
-						  	</button>
-						  	<button class="switch-button switch-button-current" id="circleBtn">
-						    	<span class="indicator-dot"></span>
-						    	CIRCLE
-						  	</button>			  
-						  	<button class="switch-button" id="gridBtn">
-						    	<span class="indicator-dot"></span>
-						    	GRID
-						  	</button>			  
-						  	<button class="switch-button" id="depthBtn">
-						    	<span class="indicator-dot"></span>
-						    	3D DEPTH
-						  	</button>					
-						</div>	-->
+						<div class="gallery-slider-wrapper app-gallery-slider-wrapper hidden-gallery">
+							<div class="swiper gallerySwiper">
+					    		<div class="swiper-wrapper">
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal1.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal2.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal3.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal4.png" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal1.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal2.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal3.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal4.png" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal1.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal2.jpg" alt="">
+						      		</div>
+					    		</div>				    	
+						  	</div>
+
+						  	<div thumbsSlider="" class="swiper thumbsSwiper">
+							    <div class="swiper-wrapper">
+							      	<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal1.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal2.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal3.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal4.png" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal1.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal2.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal3.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal4.png" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal1.jpg" alt="">
+						      		</div>
+						      		<div class="swiper-slide">
+						      			<img src="assets/img/gal/gal2.jpg" alt="">
+						      		</div>
+							    </div>
+							</div>	
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -312,12 +381,7 @@
     <!-- Bootstrap.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--Gsap
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"></script>-->
-
-	<!-- Custom Scripts -->	
+    <!-- Custom Scripts -->	
 	<script src="assets/js/common.js"></script>
 	<script src="assets/js/gallery.js"></script>
 

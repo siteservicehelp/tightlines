@@ -17,6 +17,7 @@
 	    display: flex;
 	    align-items: center;
 	    justify-content: space-between;
+	    transition: all .1s;
 
 	    .logo-block {
 	    	display: flex;
@@ -221,11 +222,16 @@
 
 		&.header-wrapper-3 {
 			background: $black;
+
+			.header-block {
+				height: 50px;
+			}
+
 			.logo-block {
+				transform: scale(0.5) translate(-50%, 0);
 		    	a {
 		    		img {
-			    		filter: none;
-			    		transform: scale(.8);
+			    		filter: none;			    		
 			    	}
 		    	}
 			}
