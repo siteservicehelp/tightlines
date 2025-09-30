@@ -45,6 +45,9 @@ h1, .h1 {
   @media screen and (max-width: 767.9px) {
     h1, .h1 {
       font-size: 50px; } }
+  @media screen and (max-width: 575.9px) {
+    h1, .h1 {
+      font-size: 46px; } }
 
 h2, .h2 {
   font-size: 60px;
@@ -1560,7 +1563,7 @@ template {
           font-size: 130px; } }
       @media (min-width: 992px) {
         .footer-wrapper .footer-logo span {
-          font-size: 176px; } }
+          font-size: 173px; } }
       @media (min-width: 1200px) {
         .footer-wrapper .footer-logo span {
           font-size: 212px; } }
@@ -3389,7 +3392,7 @@ template {
         gap: 20px; }
         .expeditions-block .expeditions-slider-wrapper .swiper .swiper-wrapper .swiper-slide .buttons-group .btn {
           min-width: 240px; }
-        @media screen and (max-width: 767.9px) {
+        @media screen and (max-width: 1199.9px) {
           .expeditions-block .expeditions-slider-wrapper .swiper .swiper-wrapper .swiper-slide .buttons-group {
             flex-wrap: wrap;
             justify-content: flex-start;
@@ -3416,13 +3419,14 @@ template {
         margin-bottom: 50px; } }
 
 .all-expeditions-block .single-expeditions-block {
-  display: flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 40px; }
+  padding: 0 0 20px;
+  overflow: visible; }
+  @media screen and (max-width: 575.9px) {
+    .all-expeditions-block .single-expeditions-block {
+      overflow: hidden; } }
   .all-expeditions-block .single-expeditions-block a {
-    width: calc(25% - 15px);
+    width: 100%;
+    height: 100%;
     display: block;
     color: #fff; }
     .all-expeditions-block .single-expeditions-block a img {
@@ -3436,15 +3440,17 @@ template {
       color: #fff;
       text-transform: uppercase;
       margin-top: 20px; }
-    @media screen and (max-width: 1500px) {
-      .all-expeditions-block .single-expeditions-block a {
-        width: calc(33.33% - 13px); } }
-    @media screen and (max-width: 1199.9px) {
-      .all-expeditions-block .single-expeditions-block a {
-        width: calc(50% - 10px); } }
-    @media screen and (max-width: 767.9px) {
-      .all-expeditions-block .single-expeditions-block a {
-        width: 100%; } }
+  .all-expeditions-block .single-expeditions-block .swiper-pagination {
+    bottom: -20px; }
+    @media screen and (max-width: 575.9px) {
+      .all-expeditions-block .single-expeditions-block .swiper-pagination {
+        bottom: auto;
+        top: 320px; } }
+    .all-expeditions-block .single-expeditions-block .swiper-pagination .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 1; }
+    .all-expeditions-block .single-expeditions-block .swiper-pagination .swiper-pagination-bullet-active {
+      background: #037CED; }
 
 /***********************
         EXPEDITIONS 
