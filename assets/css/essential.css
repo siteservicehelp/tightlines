@@ -2380,17 +2380,38 @@ template {
             justify-content: flex-start;
             gap: 20px; } }
   .expeditions-block .expeditions-map {
-    width: 100%;
-    text-align: right; }
-    .expeditions-block .expeditions-map img {
-      width: 100%;
-      height: auto; }
-      @media screen and (max-width: 1499.9px) {
-        .expeditions-block .expeditions-map img {
-          max-width: 610px; } }
-      @media screen and (max-width: 767.9px) {
-        .expeditions-block .expeditions-map img {
-          max-width: 100%; } }
+    width: 610px !important;
+    height: 610px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #fff;
+    position: relative;
+    /*.map-dark-overlay {
+      	position: absolute;
+      	top: 0; left: 0;
+      	width: 100%; height: 100%;
+      	background-color: rgba(0, 0, 0, 0.85); 
+      	pointer-events: none;
+      	z-index: 1000;
+    }*/
+    		/*img {
+    			width: 100%;
+    			height: auto;
+    
+    			@media screen and (max-width: 1499.9px) {
+    				max-width: 610px;
+    			}
+    
+    			@media screen and (max-width: 767.9px) {
+    				max-width: 100%;			
+    			}
+    		}*/ }
+    @media screen and (max-width: 1299.9px) {
+      .expeditions-block .expeditions-map {
+        max-width: 100%;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1/1; } }
     @media screen and (max-width: 991.9px) {
       .expeditions-block .expeditions-map {
         text-align: center;
@@ -3398,17 +3419,38 @@ template {
             justify-content: flex-start;
             gap: 20px; } }
   .expeditions-block .expeditions-map {
-    width: 100%;
-    text-align: right; }
-    .expeditions-block .expeditions-map img {
-      width: 100%;
-      height: auto; }
-      @media screen and (max-width: 1499.9px) {
-        .expeditions-block .expeditions-map img {
-          max-width: 610px; } }
-      @media screen and (max-width: 767.9px) {
-        .expeditions-block .expeditions-map img {
-          max-width: 100%; } }
+    width: 610px !important;
+    height: 610px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #fff;
+    position: relative;
+    /*.map-dark-overlay {
+      	position: absolute;
+      	top: 0; left: 0;
+      	width: 100%; height: 100%;
+      	background-color: rgba(0, 0, 0, 0.85); 
+      	pointer-events: none;
+      	z-index: 1000;
+    }*/
+    		/*img {
+    			width: 100%;
+    			height: auto;
+    
+    			@media screen and (max-width: 1499.9px) {
+    				max-width: 610px;
+    			}
+    
+    			@media screen and (max-width: 767.9px) {
+    				max-width: 100%;			
+    			}
+    		}*/ }
+    @media screen and (max-width: 1299.9px) {
+      .expeditions-block .expeditions-map {
+        max-width: 100%;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1/1; } }
     @media screen and (max-width: 991.9px) {
       .expeditions-block .expeditions-map {
         text-align: center;
@@ -3424,6 +3466,45 @@ template {
   @media screen and (max-width: 575.9px) {
     .all-expeditions-block .single-expeditions-block {
       overflow: hidden; } }
+  .all-expeditions-block .single-expeditions-block .expeditions-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px; }
+    @media screen and (max-width: 1440px) {
+      .all-expeditions-block .single-expeditions-block .expeditions-wrapper {
+        gap: 15px; } }
+    @media screen and (max-width: 991.9px) {
+      .all-expeditions-block .single-expeditions-block .expeditions-wrapper {
+        gap: 20px; } }
+    .all-expeditions-block .single-expeditions-block .expeditions-wrapper .expeditions-slide {
+      width: calc(25% - 15px); }
+      @media screen and (max-width: 1440px) {
+        .all-expeditions-block .single-expeditions-block .expeditions-wrapper .expeditions-slide {
+          width: calc(33.33% - 10px); } }
+      @media screen and (max-width: 991.9px) {
+        .all-expeditions-block .single-expeditions-block .expeditions-wrapper .expeditions-slide {
+          width: calc(50% - 10px); } }
+      @media screen and (max-width: 575.9px) {
+        .all-expeditions-block .single-expeditions-block .expeditions-wrapper .expeditions-slide {
+          width: 100%; } }
+  .all-expeditions-block .single-expeditions-block .swiper-slide > div {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff; }
+    .all-expeditions-block .single-expeditions-block .swiper-slide > div img {
+      max-width: 100%;
+      width: 100%;
+      height: 353px;
+      object-fit: cover;
+      object-position: center; }
+    .all-expeditions-block .single-expeditions-block .swiper-slide > div span {
+      display: block;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 20px; }
   .all-expeditions-block .single-expeditions-block a {
     width: 100%;
     height: 100%;
